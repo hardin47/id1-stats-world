@@ -14,8 +14,6 @@ navbar:
     image: images/st47s.png
     href: https://hardin47.netlify.app/
   right:
-    - text: "Home"
-      href: about.html
     - text: "Schedule"
       href: schedule.html
     - text: "Syllabus"

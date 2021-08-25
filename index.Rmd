@@ -14,9 +14,12 @@ links:
     url: "writing"
 output:
   postcards::trestles
+site: distill::distill_website
 ---
 
-ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world
+ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world  
+
+(image credit: https://www.darkhorseanalytics.com/portfolio-data-looks-better-naked)
 
 Jo Hardin  
 Fall 2021  
