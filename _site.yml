@@ -15,7 +15,7 @@ navbar:
     href: https://hardin47.netlify.app/
   right:
     - text: "Home"
-      href: index.html
+      href: about.html
     - text: "Schedule"
       href: schedule.html
     - text: "Class Notes"
