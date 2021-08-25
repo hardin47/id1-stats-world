@@ -20,16 +20,11 @@ navbar:
       href: schedule.html
     - text: "Syllabus"
       href: syllabus.html
-    - text: "Project"
-      menu: 
-        - text: "Project Assignment"
-          href: project.html
-        - text: "Group Roles"
-          href: roles.html
-        - text: "Rubric"
-          href: rubric.html
-        - text: "Data Sources"
-          href: https://hardin47.netlify.app/courses/data/
+    - text: "Assignments"
+      href: assignments.html
+    - text: "On Writing"
+      href: writing.html
+
 output: 
   distill::distill_article:
     css: theme.css

@@ -1,10 +1,10 @@
 ---
 title: "Syllabus"
 description: |
-  Daily class notes for Math 154, Computational Statistics, Pomona College
+  ID1: Statistics in the World; the plan, the details, and the logistics.
 author:
   - name: Jo Hardin 
-    url: https://m154-comp-stats.netlify.app/
+    url: https://id1-stats-world.netlify.app/
     affiliation: Pomona College
     affiliation_url: https://hardin47.netlify.app/
 output: distill::distill_article
@@ -13,8 +13,9 @@ output: distill::distill_article
 
 
 ## The Course.  
-The main idea behind this course is to get the participants (that’s you) to leave in December questioning every number you come across: in the media, at sporting events, when researching for another class, when carrying out your own research, etc.  Certainly there are some good numbers out there, but I hope that you will start asking yourself questions like “where did that come from?”, “what if you looked at it from another angle?”, “what if we knew the rest of the information/data?”  We’ll look at sources that range from journalism to scholarly writing to fiction, and we’ll see how statistics are used and misused.  As in many ID1 courses, the goal is for you to become critical inquirers.
+The main idea behind this course is to get the participants (that's you) to leave in December questioning every number you come across: in the media, at sporting events, when researching for another class, when carrying out your own research, etc.  Certainly there are some good numbers out there, but I hope that you will start asking yourself questions like "where did that come from?", "what if you looked at it from another angle?", "what if we knew the rest of the information/data?"  We'll look at sources that range from journalism to scholarly writing to fiction, and we'll see how statistics are used and misused.  As in many ID1 courses, the goal is for you to become critical inquirers.
 
+**Anonymous Feedback**  As someone who is constantly learning and growing in many ways, I welcome your feedback about the course, the classroom dynamics, or anything else you'd like me to know.  There is a link to an anonymous feedback form on the landing page of our Sakai webpage.  Please provide me with feedback at any time!  
 
 
 ## Student Learning Outcomes.
@@ -23,93 +24,104 @@ By the end of the semester, students will be able to:
 
 * describe the inherent and natural variability in the world around them.
 * argue thoughtfully that models produce information about trends and not individuals.
-* articular the ways in which data is hard to collect (bias, opinions change, genetic info, sparse availability,...).
+* articulate the ways in which data are hard to collect (bias, opinions change, genetic info, sparse availability,...).
+* combine current and historical documents to understand some of the negative impacts on society due to the statistical sciences.
 * identify ways in which graphs are effectively and ineffectively used to communicate.
 * understand the writing process and know of concrete ways they can improve as writers.
 * access various resources around campus to enhance their educational path.
 
 
-#### In class: please no phones or computers.
 
- 
+## Diversity and Inclusion Statement. 
+(adapted from Monica Linden, Brown University):
+
+In an ideal world, science would be objective. However, much of science is subjective and is historically built on a small subset of privileged voices. In this class, we will make an effort to recognize how science (and statistics!) has played a role in both understanding diversity as well as in promoting systems of power and privilege. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a scientific nature. Integrating a diverse set of experiences is important for a more comprehensive understanding of science. I would like to discuss issues of diversity in statistics as part of the course from time to time.
+
+Please contact me if you have any suggestions to improve the quality of the course materials.
+
+Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:
+
+* If you have a name and/or set of pronouns that differ from those that appear in your official records, please let me know!
+* If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me.  You can also relay information to me via your mentors.  I want to be a resource for you. If you prefer to speak with someone outside of the course, the math liaisons, Dean of Students, or QSC staff are all excellent resources.
+I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.  As a participant in course discussions, you should also strive to honor the diversity of your classmates.
+
 
 ## Daily.  
-In class we’ll mostly be discussing the readings (which can be found in the course [schedule](../ID1/schedule.html).)  You will each be responsible for leading the class on two different occasions: once to contextualize the readings and once to lead a discussion on the readings.  You are welcome to run the class in any of a variety of formats (i.e., putting students in groups to brainstorm, asking each student to respond to a question, asking provocative questions, etc.)  It will be very helpful for you to talk with me before your assigned day so that we can devise a strategy and a set of topics/questions for your discussion.  We will not discuss every word that you read, but you should complete all the readings (some of which will be used in the papers) and be prepared to discuss them.
 
+#### In class: please no phones or computers.
+
+In class we'll mostly be discussing the readings (which can be found in the course [schedule](schedule).)  You will each be responsible for leading the class on two different occasions: once to contextualize the readings and once to lead a discussion on the readings.  You are welcome to run the class in any of a variety of formats (i.e., putting students in groups to brainstorm, asking each student to respond to a question, asking provocative questions, etc.)  It will be very helpful for you to talk with me before your assigned day so that we can devise a strategy and a set of topics/questions for your discussion.  We will not discuss every word that you read, but you should complete all the readings (some of which will be used in the papers) and be prepared to discuss them.
  
 
-Even if you are not assigned to lead a discussion, you will be expected to participate and contribute to the discussion every day.  Class attendance is required.  Your comments in class will be evaluated on how well they demonstrate familiarity with the reading and how they acknowledge and promote discussion by others.  If you are one of the more talkative students, try to encourage others to contribute as well.   If you have an idea that is somewhat off topic, write it down, and we’ll come back to it.  Let’s try to keep the discussions moderately linear and on-topic.
+Even if you are not assigned to lead a discussion, you will be expected to participate and contribute to the discussion every day.  Class attendance is required.  Your comments in class will be evaluated on how well they demonstrate familiarity with the reading and how they acknowledge and promote discussion by others.  If you are one of the more talkative students, try to encourage others to contribute as well.   If you have an idea that is somewhat off topic, write it down, and we'll come back to it.  Let's try to keep the discussions moderately linear and on-topic.
 
- 
 
- 
+**contextualizing** is not as easy as it looks.  Remember that we have all done the readings, so you don't need to rehash the details.  We would, however, appreciate your overall thoughts on the readings, and, in particular, how the readings go together (or not).   Your goal in contextualizing is to set the stage for the discussion: think big (picture).   You should Google at least one thing (for example, the author, the NYT headlines on that day in history, etc.) to share with the class.  By 5pm the day before you contextualize, you should send an email to me and your fellow discusser describing what you'll say in the next class; your context should also be posted to the wiki by 5pm the day before class.  Plan to contextualize for only a few minutes (5 min max).
 
-<b>contextualizing</b> is not as easy as it looks.  Remember that we have all done the readings, so you don’t need to rehash the details.  We would, however, appreciate your overall thoughts on the readings, and, in particular, how the readings go together (or not).   Your goal in contextualizing is to set the stage for the discussion: think big (picture).   You should Google at least one thing (for example, the author, the NYT headlines on that day in history, etc.) to share with the class.  By 5pm the day before you contextualize, you should send an email to me and your fellow discusser describing what you’ll say in the next class (you should plan to talk for only a few minutes).
 
- 
+**discussing** is probably harder than contextualizing.  You will be responsible for keeping the discussion going for ~45 minutes.  You should ask open ended questions (i.e., they can't be answered with "yes" or "no" or "Frank did it").  You will also be responsible for sending the discussion questions via email to me and your fellow contextualizer by 5pm the day before you discuss.  Additionally, please meet with me at least one day before you are leading the discussion so that we can talk about what you'll be discussing.
 
-<b>discussing</b> is probably harder than contextualizing.  You will be responsible for keeping the discussion going for ~45 minutes.  You should ask open ended questions (i.e., they can’t be answered with “yes” or “no” or “Frank did it”).  You will also be responsible for sending the discussion questions via email to me and your fellow contextualizer by 5pm the day before you discuss.  Additionally, please meet with me the day before you are leading the discussion so that we can talk about what you’ll be discussing.
+**summarizing** is an important part of closing the loop on our discussion.  You are responsible for writing up one class discussion (to the Sakai wiki).  Do not try to recall every word that was said in the class period, but please report on the gist of the conversation and the most important / interesting ideas that were discussed.  The summary is due within one week of the discussion.
 
- 
-<b>summarizing</b> is an important part of closing the loop on our discussion.  You are responsible for writing up one class discussion (to the Sakai wiki).  Do not try to recall every word that was said in the class period, but please report on the gist of the conversation and the most important / interesting ideas that were discussed.  The summary is due within one week of the discussion.
-
-<b>discussion questions</b> will be due by midnight the day before the discussion.  You should post at least one open-ended question to the wiki on Sakai. Your question(s) should reflect what you got out of the readings.  You might consider the big picture, interesting concepts, questions you had on the reading, reflections after having read, etc.  
+**discussion questions** will be due (for every student) by midnight the day before the discussion.  You should post at least one open-ended question to the wiki on Sakai. Your question(s) should reflect what you got out of the readings.  You might consider the big picture, interesting concepts, questions you had on the reading, reflections after having read, etc.  
  
 
 ## Writing.  
 As you know, this course has a large writing component.  The majority of your grade will come from the writing you do.  You will write 2 formal papers and a research paper.  Additionally, there will be assigned weekly informal writings.
 
 
-<b>formal essays</b> will be turned in as a micro-essay, then a final version, then a rewrite of the final version.  Two of your peers, Candice, and I will give you comments on your paper; remember, our comments will never be comprehensive and can only be as helpful as your paper is good.  For example, if your final version of the paper is difficult to read because it is full of grammatical errors, We may comment mostly on those.  If the rewrite fixes all of the grammatical errors, the paper still may receive a “C” grade due to poor understanding of the paper topic (on which we were unable to comment for the first paper because of the grammatical errors).
+**formal essays** will be turned in as a micro-essay, then a final version, then a rewrite of the final version.  Two of your peers, Chris, and I will give you comments on your paper; remember, our comments will never be entirely comprehensive and can only be as helpful as your paper is good.  For example, if your final version of the paper is difficult to read because it is full of grammatical errors, we may comment mostly on those.  If the rewrite fixes all of the grammatical errors, the paper still may receive a "C" grade due to poor understanding of the paper topic (on which we were unable to comment for the first paper because of the grammatical errors).
+
+ 
+Papers should be in 12-point font, have one-inch margins, and be double spaced.  Include your name, the date, the course, and a title on every paper.  Do not include a separate title page.   Instructions for how / where / when to turn in papers is on the [assignments](assignments) page.
 
  
 
-Papers should be in 12-point font, have one-inch margins, and be double spaced.  Include your name, the date, the course, and a title on every paper.  Please do not include a separate title page.   Instructions for how / where / when to turn in papers is on the [assignment](../ID1/assignments.html). page.
+**research paper** will include library research and primary sources. More later. 
 
  
 
-<b>research paper</b> will include library research and primary sources. More later. 
-
- 
-
-<b>micro-essays</b> will be assigned regularly as short (500 words) reflections on some aspect of the readings from class.  You should feel free to be creative and to stretch out of your comfort zone when thinking about the readings and writing your reflections.  The grades for the informal writings will be given based on effort and participation.
+**micro-essays** will be assigned regularly as short (500 words) reflections on some aspect of the readings from class.  You should feel free to be creative and to stretch out of your comfort zone when thinking about the readings and writing your reflections.  The grades for the informal writings will be given based on effort and participation.
 
  
 ## Reading.  
-There will be a substantial amount of reading in this class (schedule).  The source of the readings are:
+There will be a substantial amount of reading in this class (see the [schedule](schedule)).  The source of the readings are:
 
 
 * Huntley – hopefully you already know where this is  (or feel free to buy the texts online).
 
 * Sakai – most of your readings will be available electronically via Sakai. 
 
-* Electronic Journals – some of your readings will be available online via the library’s electronic journal database.  This database is fairly straightforward to search, but you will also get an orientation to this and other databases on your library orientation day.
+* Electronic Journals – some of your readings will be available online via the library's electronic journal database.  This database is fairly straightforward to search, but you will also get an orientation to this and other databases on your library orientation day.
 
 
 ## Writing Center.  
-(Smith Campus Center 148)   The Pomona College Writing Center offers free, one-on-one consultations to all students enrolled in Pomona College courses. Our mission is to provide an inclusive and collaborative space for students to talk about their writing projects and processes. We welcome all kinds of writing, including academic, creative, professional, and personal, in all stages of development, from brainstorming to the final draft. Our aim is to center students’ voices and goals as they navigate varying expectations of writing across genres. The Writing Partners are Pomona students—sophomores, juniors, and seniors—majoring in disciplines as varied as Biology, Spanish, and History. They are trained to work with writers at all levels, and on work in any area. Multilingual Specialist Jenny Thomas is also available at the Writing Center, to work with international and multilingual students on navigating writing and other forms of communication in the US academic context; stop by or make an appointment - look for 'Multilingual Specialist' on the scheduler. Consultations are available by appointment, which students can make online at [writing.pomona.edu](https://www.pomona.edu/administration/writing-center).  The Writing Center also offers drop-in hours Sundays through Thursdays from 8-10pm.
+The Writing Center is open this semester! They open at full capacity after the second week of the semester, but they will be holding limited hours as soon as classes begin.  Writing and Speaking Partners meet one-on-one with students to talk about their work and provide feedback at any stage of their preparation process. Trained to think deeply about rhetoric and communication across the curriculum, these student peers facilitate conversations about everything from ID1 papers to senior theses, lab reports to creative writing, giving presentations to developing strategies for reading and engaging more deeply in class discussions. 
 
+Additionally, Jenny Thomas, the Assistant Director of College Writing and Language Diversity, offers specialized writing and speaking support for multilingual students navigating English as an additional language. 
+
+To make an appointment with a Writing or Speaking Partner, please log on to the Portal and go to Academics > Writing Center, or contact them at writing.center@pomona.edu.  All appointments will be made through the Portal as usual, and the meetings will be online--or sometimes in-person but outdoors.  The Writing and Speaking Partners will be flexible both about the mode of consultation (phone, Zoom, email, Google docs, walk and talk, etc.) and about their hours in order to accommodate student needs.  
 
 #### Writing Partner
-Writing Partner: Candice Wang
+Writing Partner: Chris Meng
 
-This course has an attached Writing Partner, Candice Wang, to help students develop their writing skills. Candice is a senior Neuroscience major at Pomona. She has worked at the Writing Center since her sophomore year. You will meet with her throughout the semester to brainstorm ideas and revise drafts. As an attached Writing Partner, Candice will know the expectations for each assignment and can make sure you’re on track. She is a resource to help you hone your writing skills and feel comfortable with college-level writing.
+ID1 has an attached Writing Partner, Chris Meng, to help students develop their writing skills. Chris is a senior Math major at Pomona. He has worked at the Writing Center since his sophomore year. You will meet with him throughout the semester to brainstorm ideas and revise drafts. As an attached Writing Partner, Chris will know the expectations for each assignment and can make sure you are on track. He is a resource to help you hone your writing skills and feel comfortable with college-level writing.
 
-While there are set times when you must meet with Candice (see the assignments for specific dates), you are encouraged to meet with her whenever you feel stuck, want to talk through an idea, or want feedback on your writing for the course.  All meetings will take place in the Writing Center, SCC 148 (across from the Living Room).
+While there are set times when you must meet with Chris (see the assignments for specific dates), you are encouraged to meet with him whenever you feel stuck, want to talk through an idea, or want feedback on your writing for the course.  
 
 
 ## Claremont Colleges Library Research Support Services
 
-The Claremont Colleges Library provides a welcoming space for students to get help on their research assignments, from theses and dissertations, to papers, to multimedia projects. Librarians are available to work with students in any discipline at any stage of the research process, including narrowing down a topic, locating and using resources, or creating a formatted reference list. Even if you are an experienced researcher, you can still benefit from working with a librarian: your librarian can introduce you to ideas, perspectives, or resources you haven’t yet considered. You will find working with a librarian to be most valuable earlier in your research process than the night before your assignment is due - the earlier the better!
+The Claremont Colleges Library provides a welcoming space for students to get help on their research assignments, from theses and dissertations, to papers, to multimedia projects. Librarians are available to work with students in any discipline at any stage of the research process, including narrowing down a topic, locating and using resources, or creating a formatted reference list. Even if you are an experienced researcher, you can still benefit from working with a librarian: your librarian can introduce you to ideas, perspectives, or resources you haven't yet considered. You will find working with a librarian to be most valuable earlier in your research process than the night before your assignment is due - the earlier the better!
 
-<a href="https://library.claremont.edu/ask-us/" target = "_blank">General research appointments</a> or <a href="https://library.claremont.edu/librarians/" target = "_blank">subject specific research appointments</a> are available for all students at point in your project.  In addition, you can get support through the Student Assisted Research Support, available through <a href="https://library.claremont.edu/ask-us/" target = "_blank">chat</a>, Mondays-Fridays. Check the library’s website for up-to-date hours.
+<a href="https://library.claremont.edu/ask-us/" target = "_blank">General research appointments</a> or <a href="https://library.claremont.edu/librarians/" target = "_blank">subject specific research appointments</a> are available for all students at point in your project.  In addition, you can get support through the Student Assisted Research Support, available through <a href="https://library.claremont.edu/ask-us/" target = "_blank">chat</a>, Mondays-Fridays. Check the library's website for up-to-date hours.
 
 
 One other library resources is their subject specific <a href = "https://libguides.libraries.claremont.edu/homepage" target = _blank">Research Guides</a>.    
 
 
 ## Academic Honesty.  
-There is a description of Pomona's Statement on Academic Honesty in the Student Handbook.  Below I have provided the basic tenants of the policy.  In ID1, we will discuss appropriate ways to cite sources.  However, you are expected to abide by all the principles in the document.  The basic idea is that you should never present other’s ideas as your own!  Please contact me if you have any questions.
+There is a description of Pomona's Statement on Academic Honesty in the Student Handbook.  Below I have provided the basic tenants of the policy.  In ID1, we will discuss appropriate ways to cite sources.  However, you are expected to abide by all the principles in the document.  The basic idea is that you should never present other's ideas as your own!  Please contact me if you have any questions.
 
 1. On independent assignments, students do not represent the ideas/language of others as theirs  
 2. Students do not destroy/alter the work of others  
@@ -120,7 +132,7 @@ There is a description of Pomona's Statement on Academic Honesty in the Student 
 Here are fun <a href = "https://library.claremont.edu/exploring-academic-integrity/" target = "_blank">academic honesty tutorials & quizes</a> you could work through to test your knowledge. 
 
 
-Please be sure to read <a href="http://catalog.pomona.edu/content.php?catoid=7&navoid=394 target = "_blank">Pomona’s Policies on Academic Integrity</a>. <a href = "Academic_Integrity.doc" target = "_blank">Additional information</a> on citation, summarizing, and working with others so that you can successfully maintain academic integrity. You will be held to all these standards from this day forward.
+Please be sure to read <a href="http://catalog.pomona.edu/content.php?catoid=7&navoid=394" target = "_blank">Pomona's Policies on Academic Integrity</a>. <a href = "Academic_Integrity.doc" target = "_blank">Additional information</a> on citation, summarizing, and working with others so that you can successfully maintain academic integrity. You will be held to all these standards from this day forward.
 
 
 ## Grades.  

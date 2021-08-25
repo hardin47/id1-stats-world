@@ -1,10 +1,30 @@
 ---
-title: "Computational Statistics"
-site: distill::distill_website
-listing: 
-  posts:
-    - 2021-08-24-syllabus
-    - 2021-08-31-getting-started-with-r-rstudio
-    - 2021-09-07-dataviz
-    - 2021-09-14-wrangling
+title: "Statistics in the World"
+image: "images/data-ink-bar.gif"
+description: |
+  ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world
+links:
+  - label: schedule
+    url: "schedule"
+  - label: syllabus
+    url: "syllabus"
+  - label: assignments
+    url: "assignments"
+  - label: on writing
+    url: "writing"
+output:
+  postcards::trestles
 ---
+
+ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world
+
+Jo Hardin  
+Fall 2021  
+Pomona College  
+Class: TR 11:10-12:25, Estella 2113  
+email: jo.hardin@pomona.edu  
+Student Hours:   
+
+Writing Partner: Chris Meng   
+email:     
+Office Hours:  email Chris to set up a time to meet    

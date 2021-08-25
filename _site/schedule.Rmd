@@ -1,7 +1,7 @@
 ---
 title: "Schedule"
 description: |
-  Schedule for Math 154, Computational Statistics, Fall 2021
+  Schedule for ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world, Fall 2021
 ---
 
 
