@@ -1,11 +1,11 @@
-name: "m154-comp-stats"
-title: "Computational Statistics"
+name: "id1-stats-world"
+title: "ID1: Statistics in the World"
 description: |
-  Math 154, Computational Statistics, Pomona College
+  ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world; Pomona College
 output_dir: "_site"
 include: ["*.Rmd"]
-base_url: https://m154-comp-stats.netlify.app/
-repository_url: https://github.com/hardin47/m154-comp-stats
+base_url: https://id1-stats-world.netlify.app/
+repository_url: https://github.com/hardin47/id1-stats-world
 creative_commons: CC BY
 twitter:
   site: "@jo_hardin47"
@@ -30,8 +30,6 @@ navbar:
           href: rubric.html
         - text: "Data Sources"
           href: https://hardin47.netlify.app/courses/data/
-    - text: "GitHub"
-      href: github.html
 output: 
   distill::distill_article:
     css: theme.css
