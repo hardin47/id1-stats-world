@@ -4,9 +4,9 @@ image: "tobi.jpg"
 description: |
   ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world
 links:
-  - label: Schedule
+  - label: schedule
     url: "schedule"
-  - label: Syllabus
+  - label: syllabus
     url: "syllabus"
   - label: assignments
     url: "assignments"
