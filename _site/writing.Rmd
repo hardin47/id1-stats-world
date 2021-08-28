@@ -15,9 +15,11 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+Link to They Say, I Say:
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+https://spscc.edu/sites/default/files/imce/students/LSS/Handout_They%20Say%20I%20Say%20templates%20all.pdf
+
+
 
 
 

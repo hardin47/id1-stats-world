@@ -5,131 +5,466 @@ description: |
 ---
 
 
-```{r echo = FALSE}
-library(tidyverse)
-library(kableExtra)
-library(knitr)
-```
-
 Here's your roadmap for the semester!
-Each week, follow the following general process:
+Every day:
 
-- Enjoy the readings <i class="fas fa-book-open"></i>  
+* read the assigned items
+* post one question to the Sakai wiki
+* complete your task if you are contextualizing, discussing, or summarizing
 
-- Attend class, review slides <i class="fas fa-desktop" target="_blank"></i> for anything you missed on the agenda  
-
-- Complete the assignment (see Sakai messages for HW link)  
-
-- Discuss the reflection questions <i class="fas fa-lightbulb" target="_blank"></i> and ethics considerations <i class="fas fa-balance-scale"></i> with your classmates, mentor, and professor  
+ Some general thoughts on <a href = "handouts/Discussion-Instructions.pdf" targe = "_blank">discussions</a>
 
 
 
-```{r echo = FALSE}
-schedule <- tribble(
-  ~date, ~topic, ~readings, ~questions, ~ethics, ~slides, ~resources,
-  "8.31.21", '<a href="posts/2021-08-31-getting-started-with-r-rstudio/">starting with R + RStudio + Git</a>',
-  '<a href="posts/2021-08-31-getting-started-with-r-rstudio/#readings"><i class="fas fa-book-open"></i></a>',
-  '<a href="posts/2021-08-31-getting-started-with-r-rstudio/#reflection-questions"><i class="fas fa-lightbulb"></i></a>',
-  '<a href="posts/2021-08-31-getting-started-with-r-rstudio/#ethics-considerations"><i class="fas fa-balance-scale"></i></a>',
-  '<a href="posts/2021-08-31-getting-started-with-r-rstudio/#slides"><i class="fas fa-desktop"></i></a>',
-  '<a href="posts/2021-08-31-getting-started-with-r-rstudio/#additional-resources"><i class="fas fa-laptop"></i></a>',
-  "9.7.21", "data viz",
-  '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "9.14.21", "wrangling",
-  '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "9.21.21", "simulation",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "9.28.21", "randomization inference",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "10.5.21", "bootstrapping",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "10.12.21", "catch-up + exam",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "10.14 + 15.21", "Exam 1", "","","","","", 
-  "10.19.21", "ethical issues",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "10.22.21", "Take home 1", "","","","","",
-  "10.26.21", "knn + trees",
-  '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "10.26.21", "Initial Project Proposal", "","","","","",
-  "11.2.21", "bagging + RF",
-  '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "11.2.21", "Final Project Proposal", "","","","","",
-  "11.9.21", "support vector machines",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "11.16.21", "clustering",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "11.19.21", "Project Update", "","","","","",
-  "11.23.21", "fantastic extensions",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "11.30.21", "catch-up + exam",
-    '<a href=""><i class="fas fa-book-open" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-lightbulb" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-balance-scale" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-desktop" target="_blank"></i></a>',
-  '<a href=""><i class="fas fa-laptop"></i></a>',
-  "11.30.21", "Take home 2", "","","","","",
-  "12.2 + 3.21", "Exam 2", "","","","","",
-  "12.10 + 14.21", "Group Presentations", "","","","","",
-  "12.14.21", "Final write-up", "","","","","")
+# Readings / Discussions / Due dates
+
+## Week 1 (perception)
+
+
+8/31   Introductions, syllabus, logistics, webpage info
+
+9/2    Context <i class="fas fa-users"></i>  Discussion <i class="fas fa-users"></i>  Summary: Professor Hardin 
+
+<i class="fas fa-comment-dots"></i> human perception  
+
+* Tversky, A. and Kahneman, D. (1974). "Judgment under uncertainty: heuristics and biases."  *Science*, vol 185, pgs 1124-1131. (https://library.claremont.edu/ -- log in & search!)  
+* Tversky, A., & Kahneman, D. (1971). "Belief in the law of small numbers." *Psychological Bulletin*, 76(2), 105–110. (https://library.claremont.edu/ -- log in & search!)  
+* The Decision Lab, "Why do we think a random event is more or less likely to occur if it happened several times in the past?" https://thedecisionlab.com/biases/gamblers-fallacy/
+
+<font color = "#114B5F"><b>
+9/5   Due (Sunday by 11:59pm to Sakai): Micro-essay on chance
+</b> </font>
+ 
+## Week 2 (sports)
+
+ 9/7    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> chance & variability in sports  
+
+* Berry, S. (2006) "Statistical fallacies in sports." *Chance*, vol 19, pgs 50-56.  (on Sakai)  
+* James, B.,  Albert, J.,  and Stern, H. (2005)  "Answering questions about baseball using statistics." *Anthology of Statistics in Sports.* Chp 15, pgs 111-117.  (on Sakai)
+
+
+ 9/9    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> algorithms in sports  
+
+* Lewis, M. (2003) *Moneyball*, pgs 66 - 73 and 272 - 275. (on Sakai)
+* Ross, T. (June 25, 2015) "Welcome to smarter basketball." *The Atlantic*.    https://www.theatlantic.com/entertainment/archive/2015/06/nba-data-analytics/396776/  
+
+```{r echo = FALSE, eval = FALSE}
+  ## Week 3 (Fiction)
+  9/18   Discussion:
+  Bernstein, P. The failure of invariance.  Against the Gods. (Sakai)
+Maloney, R. Inflexible logic. (Sakai)
+Cole, K.C. Calculated risks.  The Universe and the Teacup. (Sakai)
+9/20    
+Stoppard, T.  Rosencrantz & Guildenstern are Dead (Sakai)
+Calvino, I. How much shall we bet?  Cosmicomics. (Sakai) 
+```
+
+<font color = "#114B5F"><b>
+9/12    Due (Sunday, 11:59pm to Sakai): Micro-essay on believing/doubting game (based on next Tuesday's reading!)
+</b> </font>
+
+## Week 3 (fiction)
+
+9/14      Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> an interesting metaphor  
+
+* Borges, J.L.  "The Babylon lottery." *Ficciones*. (on Sakai)      
+
+9/16    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<font color = "#114B5F"><b>
+9/16    Due (Thursday, 11:59pm to Sakai): Micro-essay for paper 1
+</b> </font>
+
+<i class="fas fa-comment-dots"></i> ideas of fate vs. chance 
+
+* Dostoevsky, F.  *The Gambler*. (you'll need to find it)  
+
+
+
+## Week 4 (sampling)
+
+
+9/21  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-gamepad"></i> Sampling applet:   
+http://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm?candy=1 
+
+<i class="fas fa-comment-dots"></i> random samples are key
+
+* Bryson, M. (1976).  "The Literary Digest poll: making of a statistical myth." *The American Statistician*, vol 30 (no 4), pages 184-185. (on Sakai)  
+* Radwin, D. (October 5, 2009). "High response rates don’t ensure survey accuracy."  *The Chronicle of Higher Education*. (on Sakai)   
+* Ranganathan, M. (November 4, 2014), "Where are the real errors in political polls?", *Scientific American*.  https://blogs.scientificamerican.com/guest-blog/where-are-the-real-errors-in-political-polls/    
+
+9/23  <i class="fas fa-video"></i> Magic Town (1947), directed by 
+William A. Wellman, RKO Studios. https://www.imdb.com/title/tt0039595/  (on Video47)
+
+<font color = "#114B5F"><b>
+9/23    Library Day  
+        Due (bring with you on paper): library notes 
+</b> </font>  
+
+```{r eval = FALSE, echo = FALSE}
+* [skim don't read:]  Meng, X.-L. (2018) "Statistical Paradises and Paradoxes in Big Data:  law of large populations, big data paradox, and the 2016 US presidential election."  *The Annals of Applied Statistics*.  https://projecteuclid.org/download/pdfview_1/euclid.aoas/1532743473  [n.b., This article is very technical.  You should **skim **it to get the basic ideas of statistical modeling to address issues of non-random sampling.  **Do not try to understand the technical details**.]
+* Utts, J. (2005/2015) "How to get a good sample" (chp 4).  *Seeing Through Statistics*. 
+```
+
+## Week 5 (elections)
+
+<font color = "#114B5F"><b>
+9/27      Due (Monday at 11:59pm on Sakai): Paper 1  
+</b> </font>
+
+9/28  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> 2020 election polling
+
+* FiveThirtyEight is a poll aggregator https://projects.fivethirtyeight.com/polls/
+* Alexander, J. (2010) "Appendix on the poll of polls." *The Performance of Politics*. (on Sakai)  
+* Silver, N. (2014) "How FiveThirtyEight Calculates Pollster Ratings" *FiveThirtyEight* https://fivethirtyeight.com/features/how-fivethirtyeight-calculates-pollster-ratings/ and https://projects.fivethirtyeight.com/pollster-ratings/  
+* Final FiveThirtyEight prediction in 2020:  https://projects.fivethirtyeight.com/2020-election-forecast/  
+* Cohn, N. (September 20, 2016), "We gave four good pollsters the same raw data.  They had four different results." *The New York Times*.  https://www.nytimes.com/interactive/2016/09/20/upshot/the-error-the-polling-world-rarely-talks-about.html 
+* Keeter, S, Hatley, N, Lau, A, and Kennedy, C. (March 2, 2021) "What 2020's Election Poll Errors Tell Us About the Accuracy of Issue Polling" Pew Research Center.
+https://www.pewresearch.org/methods/2021/03/02/what-2020s-election-poll-errors-tell-us-about-the-accuracy-of-issue-polling/
+
+
+
+9/30      Peer review of Paper 1  
+<font color = "#114B5F"><b>
+9/30      Due (printed in class): completed peer reviews
+</b> </font>
+
+
+```{r echo = FALSE, eval = FALSE}
+* Final FiveThirtyEight prediction:  https://projects.fivethirtyeight.com/2016-election-forecast/  
+* Alexander, J. (2010) "Appendix on the poll of polls." *The Performance of Politics*. (on Sakai)  
+* Silver, N. (2014) "How FiveThirtyEight Calculates Pollster Ratings" *FiveThirtyEight* https://fivethirtyeight.com/features/how-fivethirtyeight-calculates-pollster-ratings/ and https://projects.fivethirtyeight.com/pollster-ratings/  
+* Cohn, N. (October 12, 2016) "How one 19-Year-Old Illinois man is distorting national polling averages." *The New York Times*. https://www.nytimes.com/2016/10/13/upshot/how-one-19-year-old-illinois-man-is-distorting-national-polling-averages.html  
+* Cohn, N. (September 20, 2016), "We gave four good pollsters the same raw data.  They had four different results." *The New York Times*.  https://www.nytimes.com/interactive/2016/09/20/upshot/the-error-the-polling-world-rarely-talks-about.html  
+* [AND THE FOLLOW UP] Gelman, A. (September 23, 2016) "Trump +1 in Florida; or, a quick comment on that '5 groups analyze the same poll' exercise."  http://andrewgelman.com/2016/09/23/trump-1-in-florida-or-a-quick-comment-on-that-5-groups-analyze-the-same-poll-exercise/
+* [NOTE THE DATE HERE] Silver, N. (October 24, 2016) "Election update: why our model is more bullish than others on Trump." *FiveThirtyEight* http://fivethirtyeight.com/features/election-update-why-our-model-is-more-bullish-than-others-on-trump/
+* [NOTE THE DATE HERE] Grim, R. (November 5, 2016)  "Nate Silver is Unskewing Polls - All of Them - In Trump's Direction" HuffPost https://www.huffingtonpost.com/entry/nate-silver-election-forecast_us_581e1c33e4b0d9ce6fbc6f7f  
+* Silver, N. (November 8, 2016) "Final election update: There's a wide range of outcomes, and most of them come up Clinton." *FiveThiryEight*. https://fivethirtyeight.com/features/final-election-update-theres-a-wide-range-of-outcomes-and-most-of-them-come-up-clinton/   
+
+  
+* Rutenberg, J. (November 9, 2016), "A 'Dewey Defeats Truman' lesson for the digital age." *The New York Times*. https://www.nytimes.com/2016/11/09/business/media/media-trump-clinton.html  
+* Silver, N. (November 11, 2016) "Why FiveThirtyEight gave Trump a better chance than almost anyone else." *FiveThiryEight*.  https://fivethirtyeight.com/features/why-fivethirtyeight-gave-trump-a-better-chance-than-almost-anyone-else/  
+* Gross, J. (November 29, 2016) "How to better communicate election forecasts - in one simple chart." *The Washington Post*. https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/29/how-to-better-communicate-election-forecasts-in-one-simple-chart/
+* Bump, P. (August 9, 2018) "New data makes it clear: Non-voters handed Trump the presidency." *The Washington Post.* https://www.washingtonpost.com/news/politics/wp/2018/08/09/new-data-makes-it-clear-nonvoters-handed-trump-the-presidency/  
 ```
 
 
 
-```{r echo = FALSE}
-schedule %>% 
-  kbl(escape = FALSE, align = c(rep('l',2), rep('c',5))) %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-  column_spec(4, )
+
+```{r echo = FALSE, eval = FALSE}
+* [Toggle at the top to see different genres, scroll down to see individual races]  https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/   
+* [THEIR METHODS!] Silver, N. (August 16, 2018) "How FiveThirtyEight's House Model Works." *FiveThirtyEight*. https://fivethirtyeight.com/features/2018-house-forecast-methodology/
+
+* Pew Research Center (August 9, 2018) "For most Trump voters, 'Very Warm' feelings for him endured." http://assets.pewresearch.org/wp-content/uploads/sites/5/2018/08/13090439/8-9-2018-Validated-voters-release1.pdf   
+* [Just read the executive summary] American Association for Public Opinion Research "An evaluation of 2016 election polls in the U.S." https://www.aapor.org/Education-Resources/Reports/An-Evaluation-of-2016-Election-Polls-in-the-U-S.aspx    
+* Gelman, A. and Azari, J. (2017) "19 things we learned from the 2016 election." *Statistics and Public Policy*, vol 4, pages 1-10.  https://www.tandfonline.com/doi/full/10.1080/2330443X.2017.1356775   
+* Barbaro, M. (August 10, 2018) "The Trump voters we don't talk about" *The Daily*. https://radiopublic.com/TheDaily/ep/s1!3abf8     
+
+and don't miss NYT LIVE ELECTION POLLING!!!  Does it get any more fun than that????...  
+
+* https://www.nytimes.com/interactive/2018/upshot/elections-polls.html?module=inline   
+* [Description]   https://www.nytimes.com/2018/09/06/upshot/midterms-2018-polls-live.html   
+* [Pros and Cons, etc.]  https://www.nytimes.com/2018/09/06/upshot/live-poll-explainer.html?module=inline   
+
+http://pages.pomona.edu/~jsh04747/courses/id1/iraqi_death_count_npr.mp3
+NPR story on Iraqi death count (This American Life, Nov 3, 2006, “What’s in a Number?” Act One: Truth, Damn Truth, and Statistics; Act Three: The War this Time. 23 min long)
 ```
 
 
 
+## Week 6  (decolonizing statistics)
+
+10/5   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+
+<i class="fas fa-comment-dots"></i> meaning of "mathematics"
+
+* Iseke-Barnes, J. (2000) "Ethnomathematics and Language in Decolonizing Mathematics." *Race, Gender, & Class*, Vol 7, pgs 133-149.  https://www.jstor.org/stable/41674951  (log in to library to see full paper)
+* Su, F. (2015) "Mathematical Microaggressions."  *MAA Focus*. http://digitaleditions.walsworthprintgroup.com/publication/?i=278032&p=36   
+
+10/7   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> data and power
+
+* D'Ignazio, C. and Klein, L. (2020) "The Power Chapter." *Data Feminism*. https://data-feminism.mitpress.mit.edu/
+
+
+```{r echo = FALSE, eval = FALSE}
+*  Steele, C. (1997) "A Threat in the Air: How Stereotypes Shape Intellectual Identity and Performance." *American Psychologist*, vol 52 (6), pgs 613-629.  
+    * The article I’ve assigned is long, alas - I chose it because it is the most complete summary of his work that I can find, and it does a great job of explaining the nuances of the argument, along with summarizing some really compelling research studies. Since the paper is long, consider the following questions, to help focus your reading (thanks to Janice Hudgings in Physics for these suggestions):
+
+        1. What precisely is stereotype threat, and how does it differ from implicit bias, self-doubt, and explicit biases such as socioeconomic and educational discrimination, which also can affect educational success? The paper repeatedly makes the point that stereotype threat is NOT referring to the idea that negative stereotypes impair women and/or people of color’s academic performance by triggering self-doubt about their own abilities – so, what then is stereotype threat?  
+        2. Beyond the two examples of stereotype threat that Dr. Steele is discussing in his paper, what are some other examples of stereotype threat?  
+        3. What are the main experiments that Dr. Steele’s research group did to test their ideas about stereotype threat?
+
+
+https://research.pomona.edu/janice-hudgings/teaching/bias-and-privilege-in-physics/ 
+```
+
+<font color = "#114B5F"><b>
+10/8     Due (Friday, by 11:59pm to Sakai): Paper 1, after peer review
+</b> </font>
+
+## Week 7 (machine bias)
+
+
+10/12    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<font color = "#114B5F"><b>
+10/12       Due (Tuesday, 11:59pm to Sakai): Micro-essay on Paper 2
+</b> </font>
+
+<i class="fas fa-comment-dots"></i> algorithmic bias
+
+* O'Neil, C. (2016) *Weapons of Math Destruction*, pages 1-31, 84-104. (on Sakai)   
+* Angwin, J., Larson, J., Mattu, S., and Kirchner, L. (May 23, 2016), "Machine bias." *ProPublica*.  https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing  
+* <i class="fas fa-video"></i> Hardesty, L. (February 11, 2018) "Study finds gender and skin-type bias in commercial artificial-intelligence systems" *MIT News* https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212
+
+<i class="fas fa-comment-dots"></i> consequences
+
+
+10/14   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary: 
+
+* Castelvecchi, D. (November 18, 2020) "Is facial recognition too biased to be let loose?" *Nature* https://www.nature.com/articles/d41586-020-03186-4 
+* Simonite, T (2021) "What really happened when Google ousted Timnit Gebru." *Wired* https://www.wired.com/story/google-timnit-gebru-ai-what-really-happened/
+* Weinberger, S. (September 28, 2020) "Techie Software Soldier Spy Palantir, Big Data’s scariest, most secretive unicorn, is going public. But is its crystal ball just smoke and mirrors?", *New York Magazine* https://nymag.com/intelligencer/2020/09/inside-palantir-technologies-peter-thiel-alex-karp.html
+* MacCarthy (May 26, 2021) "Mandating fairness and accuracy assessments for law enforcement facial recognitionsystems." *Brookings* https://www.brookings.edu/blog/techtank/2021/05/26/mandating-fairness-and-accuracy-assessments-for-law-enforcement-facial-recognition-systems/
+
+```{r eval = FALSE, echo = FALSE}
+Hadley also has a great list!!!
+https://github.com/hadley/stats337
+
+* [Optional Reading, slightly technical] Angwin, J. and Larson, J. (December 30, 2016) "Bias in criminal risk scores is mathematically inevitable, researchers say." *ProPublica*.  https://www.propublica.org/article/bias-in-criminal-risk-scores-is-mathematically-inevitable-researchers-say  
+* [Optional reading, maybe repetitive?]  Alexander, M. (Nov 8, 2018) "The Newest Jim Crow." *The New York Times*.  https://www.nytimes.com/2018/11/08/opinion/sunday/criminal-justice-reforms-race-technology.html
+```
+
+
+```{r eval = FALSE, echo = FALSE}
+* Peng, R. (June 6, 2014) "The real reason reproducible research is important." *simplystatistis.org* https://simplystatistics.org/2014/06/06/the-real-reason-reproducible-research-is-important/  
+* Bialik, C. (May 20, 2015) "As a major retraction shows, we're all vulnerable to faked data." *FiveThirtyEight*.  https://fivethirtyeight.com/features/as-a-major-retraction-shows-were-all-vulnerable-to-faked-data/  
+* Baumer, B., Kaplan, D., Horton, N. (2017)  "Professional ethics." *Modern Data Science with R*.  http://mdsr-book.github.io/excerpts/mdsr-ethics.pdf  (not section 6.2 ...  we will cover graphs in a few weeks)
+* Retraction Watch: https://retractionwatch.com/the-retraction-watch-leaderboard/
+```
+
+ 
+
+## Week 8
+
+10/19     Fall Break  
+<font color = "#114B5F"><b>
+10/19     Due (Tuesday, by 11:59pm, to Sakai): Paper 2
+</b> </font>
+
+10/21      Peer review Paper 2  
+<font color = "#114B5F"><b>
+10/21      Due (printed in class): completed peer review
+</b> </font>
+
+
+## Week 9 (data viz)
+
+
+10/26   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> story telling
+
+* Lupi, G. and Posavec, S. (2016) In particular, weeks: 1, 14, 17, 18, 22, 24, 39, & 52. *Dear Data*.  http://www.dear-data.com/by-week/ * Mansky, J. (2018) "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color" *Smithsonian Mazagine*, https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/
+* Weber, J. (2019) "How W.E.B. Du Bois meticulous visualized 20th-century black america." *Hyperallergic* https://hyperallergic.com/476334/how-w-e-b-du-bois-meticulously-visualized-20th-century-black-america/
+
+10/28  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> truth finding
+
+* Elliott, K. (May 2, 2016) "39 studies about human perception in 30 minutes." *Medium*.  https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73
+* Tufte, E. (1997).  *Visual and Statistical Thinking: displays of evidence for making decisions*.  You can buy it here, but you can find it elsewhere:  http://www.edwardtufte.com/tufte/books_textb  [the reading is a pamphlet which is about 30 pages long.  There are two stories:  the Challenger explosion and John Snow's work during the cholera epidemic.  use Google to find it.]
+
+
+<font color = "#114B5F"><b>
+10/28  Due (Thursday by 11:59pm, to Sakai): Paper 2, after peer review
+</b> </font>
+
+```{r echo = FALSE, eval = FALSE}
+* Elliott, K. (May 2, 2016) "39 studies about human perception in 30 minutes." *Medium*.  https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73
+* Utts, J. (2005/2015). "Plots, graphs, and pictures" (chp 9).  *Seeing Through Statistics*. (Huntley)
+* Huff, D. (1982). "The gee-whiz graph & the one dimensional picture."  *How to Lie with Statistics*.  (on Sakai)
+* What is going on in this graph? https://www.nytimes.com/column/whats-going-on-in-this-graph   
+```
+
+
+
+## Week 10 (variables)
+
+<font color = "#114B5F"><b>
+11/2  Due: Dear Data presentations
+</b> </font>
+
+<i class="fas fa-comment-dots"></i> your variable choices
+
+Dear Data postcard (due by Monday 11/1 11:59pm to Sakai).      
+Some tips are here: 
+https://fivethirtyeight.com/features/dear-data-and-fivethirtyeight-want-you-to-visualize-your-podcast-habits/
+
+
+11/4   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> acceptable variable choices
+
+* <i class="fas fa-video"></i> Adichie, N. (2009) "The danger of a single story."  *TED* https://www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story
+* <i class="fas fa-gamepad"></i> Dollar Street https://www.gapminder.org/dollar-street consider a few families - what similarities and difference do you notice?; choose one variable and see how it varies across the "street".  
+* Jones, C.P. (2001) "Invited Commentary: 'Race,' Racism, and the Practice of Epidemiology."  *American Journal of Epidemiolgoy*, Vol 154, pgs 299-304. https://academic.oup.com/aje/article/154/4/299/61900
+* Krause, H. (August 27, 2021) "We need to fill in the blanks in our social identity data." *We All Count* https://weallcount.com/2021/08/27/we-need-to-fill-in-the-blanks-in-our-social-identity-data/
+
+## Week 11 (causation in medicine)
+
+11/9  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> wellness programs
+
+* O'Neil, C. (2016) *Weapons of Math Destruction*, pages 173-178. (on Sakai)
+* Carroll, A. (August 6, 2018) "Workplace wellness programs don't work well.  Why some studies show otherwise." *The New York Times*.  https://www.nytimes.com/2018/08/06/upshot/employer-wellness-programs-randomized-trials.html  
+
+```{r echo = FALSE, eval = FALSE}
+* Utts, J. (2005 /2015) "Experiments and observational studies" (chp 5). *Seeing Through Statistics*.
+
+maybe this article on presenting quantitative information to patients
+
+* Trevena, L. et al. (2013) "Presenting quantitative information about decision outcomes: a risk communication primer for patient decision aid developers." *BMC Medical Informatics & Decision Making*. Vol 13, S7.  http://www.biomedcentral.com/1472-6947/13/S2/S7
+```
+
+
+11/11  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> race vs. racism
+
+* Boyd, R., Lindo, E., Weeks, L., and McLemore, M. (2020) "On Racism: a new standard for publishing on racial health inequalities." *Health Affairs Blog* https://www.healthaffairs.org/do/10.1377/hblog20200630.939347/full/  
+* Vyas, D., Eisenstein, L., and Jones, D. (2020) "Hidden in plain sight — reconsidering the use of race correction in clinical algorithms." *The New England Journal of Medicine*, vol 383, pgs 874-882. https://www.nejm.org/doi/full/10.1056/NEJMms2004740 
+
+
+<font color = "#114B5F"><b>
+11/15     Due (Thursday, 11:59pm to Sakai): Micro-essay on paper 3
+</b> </font>
+
+
+
+## Week 12 (vaccines)
+
+11/16   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+
+<i class="fas fa-comment-dots"></i> polio & MMR
+
+* (polio) Meier P. (1989)  The biggest public health experiment ever: the 1954 field trial of the Salk poliomyelitis vaccine.  Statistics: A Guide to the Unknown, 3rd edition.  The Joint Committee on the Curriculum in Statistics and Probability of the American Statistical Association and the National council of Teachers of Mathematics.  Duxbury Press: Belmont, California. (on Sakai)
+* (polio) Meldrum, M. (1998) "'A calculated risk': the Salk polio vaccine field trials of 1954." *British Medical Journal*, vol 317, pgs 1233-1236. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1114166/
+* (MMR) Sathyanarayana R., Andrade C. (2011) "The MMR vaccine and autism: Sensation, refutation, retraction, and fraud." *Indian J Psychiatry*, vol 53, pgs 95-96. https://www.indianjpsychiatry.org/text.asp?2011/53/2/95/82529
+* <i class="fas fa-video"></i> Carroll, A. (2014) "Vaccines Don't Cause Autism" Healthcare Triage https://www.youtube.com/watch?v=o65l1YAVaYc
+* <i class="fas fa-video"></i> Carroll, A. (2015) "Studies Confirm, Vaccines Still Don't Cause Autism. But Are These Studies Helping?" Healthcare Triage https://www.youtube.com/watch?v=j_zqBPuPx8w 
+
+11/18 Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary: 
+
+<i class="fas fa-comment-dots"></i> efficacy
+
+* Young-Saver, D. (December 13, 2020) "What does 95% effective mean?  Teaching the math of vaccine efficacy." *The New York Times* https://www.nytimes.com/2020/12/13/learning/what-does-95-effective-mean-teaching-the-math-of-vaccine-efficacy.html
+* Morris, J. (August 17, 2021) "Israeli data: How can efficacy vs. severe disease be strong when 60% of hospitalized are vaccinated?", https://www.covid-datascience.com/post/israeli-data-how-can-efficacy-vs-severe-disease-be-strong-when-60-of-hospitalized-are-vaccinated
+
+<font color = "#114B5F"><b>
+11/21     Due (Sunday by 11:59pm to Sakai): Annotated Bibliography for paper 3
+</b> </font>
+
+```{r eval = FALSE, echo = FALSE}
+* Altman, D. (1980) "Statistics and ethics in medical research. Misuse of statistics is unethical." *British Medical Journal*.  vol 281, pgs 1182-1184.   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1714517/pdf/brmedj00045-0026.pdf  
+* Lee, S. "Here's How Cornell Scientist Brian Wansink Turned Shoddy Data into Viral Studies about how we Eat."  *Buzzfeednews.com* https://www.buzzfeednews.com/article/stephaniemlee/brian-wansink-cornell-p-hacking  
+* [Optional, very technical, about p-values]  Gelman, A. ad Loken, E.  "The garden of forking paths: Why multiple comparisons can be a problem, even when there is no 'fishing expedition' or 'p-hacking' and the research hypothesis was posited ahead of time."  White paper.  http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf
+
+
+
+#### What do we know about fat?  
+* Oliver, J. (2006) *Fat Politics* pgs 1-13, 24-28 (on Sakai)   
+* [Optional:  current research on obesity discourse and fat politics]  Monaghan L., Colls, R., and Evans, B. (2013) "Obesity discourse and fat politics: research, critique and interventions." *Critical Public Health*.   [login to the library to get to the article]  
+
+#### What do we know about Vioxx?   
+*  Abramson, J. (2005). False and misleading: the misrepresentation of Celebrex and Vioxx. Overdo$ed America. (on Sakai)   
+
+#### What do we know about alcohol?   
+* Carroll, A. (August 28, 2018) Study Causes Splash, but Here's Why You Should Stay Calm on Alcohol's Risks. *New York Times*. https://www.nytimes.com/2018/08/28/upshot/alcohol-health-risks-study-worry.html   
+
+#### [Optional] What do we know about chocolate?  
+* Bohannon, J. (May 27, 2015) "I Fooled Millions Into Thinking Chocolate Helps Weight Loss.  Here's How." https://io9.gizmodo.com/i-fooled-millions-into-thinking-chocolate-helps-weight-1707251800  
+* [statistical ethics] Gelman, A. (May 29, 2015) "John Bohannon’s chocolate-and-weight-loss hoax study actually understates the problems with standard p-value scientific practice." http://andrewgelman.com/2015/05/29/i-fooled-millions-into-thinking-chocolate-helps-weight-loss-heres-how/    
+* [medical ethics] Lumley, T. "Was the fake chocolate study unethical?"  *Biased & Inefficient* http://notstatschat.tumblr.com/post/120095349481/was-the-fake-chocolate-study-unethical    
+```
+
+
+## Week 13 (pandemics)
+
+11/23   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> masks
+
+* Markel, H., Lipman, H., and Navarro, J.A. et al. (2007) "Nonpharmaceutical interventions implemented by US cities during the 1918-1919 influenza pandemic" *Journal of the American Medical Association,* vol 298, pgs 644-654. https://jamanetwork.com/journals/jama/fullarticle/208354* MacIntyre C. et al. () "A cluster randomised trial of cloth masks compared with medical masks in healthcare workers." *Infection diseases*
+* Doung-ngern, P. et al. (2020) "Case-Control Study of Use of Personal Protective Measures and Risk for SARS-CoV 2 Infection, Thailand." *Emerging Infectious Diseases*, vol 26.  https://wwwnc.cdc.gov/eid/article/26/11/20-3003_article
+
+11/25     Thanksgiving
+
+<font color = "#114B5F"><b>
+11/28      Due (Sunday by 11:59pm to Sakai): Paper 3
+</b> </font>
+
+```{r echo = FALSE, eval = FALSE}
+* quality of life, how to measure, Dear Data
+
+* Harmon A.  (18 September 2010).  New Drug Stirs Debate on Rules of Clinical Trials. *The New York Times* 
+http://www.nytimes.com/2010/09/19/health/research/19trial.html?hp
+* Rabine, R.  24 September 2018.  NYT Online  Trial by Fire: Critics Demand that a Huge Sepsis Study Be Stopped.  https://www.nytimes.com/2018/09/24/health/sepsis-trial-treatments.html
+* Gawande A.  (2010).  Letting Go.  Annals of Medicine.  The New Yorker.  2 August 2010. http://www.newyorker.com/reporting/2010/08/02/100802fa_fact_gawande
+* Gould SJ.  The median isn’t the message.  CancerGuide: Statistics. (on Sakai)
+```
+
+
+## Week 14 (Statistics & Law)
+
+11/30  
+
+* <i class="fas fa-video"></i> 12 Angry Men (1957), directed by 
+Sidney Lumet, Orion-Nova Productions. https://www.imdb.com/title/tt0050083/  (in class) 
+
+12/2   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+* 12 Angry Men
+* Cobb, G. and Gehlbach, S. (2006). Statistics in the courtroom.  Statistics: a Guide to the Unknown, 3rd edition. The Joint Committee on the Curriculum in Statistics and Probability of the American Statistical Association and the National council of Teachers of Mathematics. Duxbury Press: Belmont, California.  (on Sakai)
+* Gannon, M. (July 12, 2017) Amazing DNA Tool Gives Cops a New Way to Crack Cold Cases, *nbcnews.com*. https://www.nbcnews.com/mach/science/amazing-dna-tool-gives-cops-new-way-crack-cold-cases-ncna781946   
+
+```{r echo = FALSE, eval = FALSE}
+* Weir, B. (2006). DNA Fingerprinting.  Statistics: a Guide to the Unknown. (on Sakai)   
+* (May 28, 1995) The Power of DNA Evidence, *New York Times*.  https://www.nytimes.com/1995/05/28/opinion/the-power-of-dna-evidence.html  
+* Greenwood, V. (July 2016) How Science is Putting a New Face on Crime Solving. *National Geographic Magazine*. https://www.nationalgeographic.com/magazine/2016/07/forensic-science-justice-crime-evidence/   
+* Neuborne, B. (Nov 29, 2018) "Trump may fire Mueller, but he can't fire Mueller's grand jury" *LA Times*. https://www.latimes.com/opinion/op-ed/la-oe-neuborne-mueller-grand-juries-20181129-story.html  
+```
+
+## Week 15 (fin)
+
+<font color = "#114B5F"><b>
+12/7     Class presentations  (OR posters: Wednesday 12/8  noon-2pm ????)  
+
+12/9   No class - reading days
+
+
+12/10     Due (Friday by 11:59pm to Sakai): Paper 3, *after* peer review  
+</b> </font>
+
+```{r echo = FALSE, eval = FALSE}
+* Evans, J. (2017) *Thinking and Reasoning: A Very Short Introduction*
+* Lucy, D. (2005). Introduction to Statistics for Forensic Scientists. Selected pages (Sakai)  
+* Kaplan, M. and Kaplan, E. (2006). Judging.  Chances Are…Adventures in Probability.  (Sakai)  
+```
+
+ 
