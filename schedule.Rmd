@@ -1,7 +1,7 @@
 ---
 title: "Schedule"
 description: |
-  Schedule for ID1: 9 out of 10 seniors recommend this first year seminar, statistics in the world, Fall 2021
+  Most of the readings are available either via Sakai or hyperlinks.  Don't forget to find "The Gambler" by Dostoevsky. If you can't find a reading, just ask!
 ---
 
 
@@ -11,8 +11,9 @@ Every day:
 * read the assigned items
 * post one question to the Sakai wiki
 * complete your task if you are contextualizing, discussing, or summarizing
+* pay attention to due dates for written assignments
 
- Some general thoughts on <a href = "handouts/Discussion-Instructions.pdf" targe = "_blank">discussions</a>
+ Some general thoughts on <a href = "handouts/Discussion-Instructions.pdf" target = "_blank">discussions</a>
 
 
 
@@ -30,6 +31,8 @@ Every day:
 * Tversky, A. and Kahneman, D. (1974). "Judgment under uncertainty: heuristics and biases."  *Science*, vol 185, pgs 1124-1131. (https://library.claremont.edu/ -- log in & search!)  
 * Tversky, A., & Kahneman, D. (1971). "Belief in the law of small numbers." *Psychological Bulletin*, 76(2), 105–110. (https://library.claremont.edu/ -- log in & search!)  
 * The Decision Lab, "Why do we think a random event is more or less likely to occur if it happened several times in the past?" https://thedecisionlab.com/biases/gamblers-fallacy/
+
+* [optional] Utts, J. (2005/2015) "Psychological Influences on Personal Probabilities," chp 17 & "When Intuition Differs from Relative Frequency," chp 18. (on Sakai). 
 
 <font color = "#114B5F"><b>
 9/5   Due (Sunday by 11:59pm to Sakai): Micro-essay on chance
@@ -351,7 +354,7 @@ maybe this article on presenting quantitative information to patients
 
 
 <font color = "#114B5F"><b>
-11/15     Due (Thursday, 11:59pm to Sakai): Micro-essay on paper 3
+11/11     Due (Thursday, 11:59pm to Sakai): Micro-essay on paper 3
 </b> </font>
 
 
@@ -410,7 +413,8 @@ maybe this article on presenting quantitative information to patients
 
 <i class="fas fa-comment-dots"></i> masks
 
-* Markel, H., Lipman, H., and Navarro, J.A. et al. (2007) "Nonpharmaceutical interventions implemented by US cities during the 1918-1919 influenza pandemic" *Journal of the American Medical Association,* vol 298, pgs 644-654. https://jamanetwork.com/journals/jama/fullarticle/208354* MacIntyre C. et al. () "A cluster randomised trial of cloth masks compared with medical masks in healthcare workers." *Infection diseases*
+* Markel, H., Lipman, H., and Navarro, J.A. et al. (2007) "Nonpharmaceutical interventions implemented by US cities during the 1918-1919 influenza pandemic" *Journal of the American Medical Association,* vol 298, pgs 644-654. https://jamanetwork.com/journals/jama/fullarticle/208354  
+* MacIntyre C. et al. () "A cluster randomised trial of cloth masks compared with medical masks in healthcare workers." *Infection diseases*
 * Doung-ngern, P. et al. (2020) "Case-Control Study of Use of Personal Protective Measures and Risk for SARS-CoV 2 Infection, Thailand." *Emerging Infectious Diseases*, vol 26.  https://wwwnc.cdc.gov/eid/article/26/11/20-3003_article
 
 11/25     Thanksgiving
