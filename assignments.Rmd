@@ -20,7 +20,7 @@ You may want to look at the <a href="handouts/ID1 micro peer.pdf" target="_blank
 
 
 <font color = "#114B5F"><b>9/5/21</b></font>  
-Consider a time in your life that had a random / chance / fateful aspect.  Describe the scene from this experience (providing any relevant background).  The title of your piece should be a single word signifying what you hope to elicit in your reader.  Be as free as you like with the topic and style.  We will be sharing the writings with our entire ID1 class (they will not be posted publicly), but you will have a chance to revise your essay, if you wish, before they are shared.
+Consider a time in your life that had a random / chance / fateful aspect.  Describe the scene from the experience (providing any relevant background).  The title of your piece should be a single word signifying what you hope to elicit in your reader.  Be as free as you like with the topic and style.  We will be sharing the writings with our entire ID1 class (they will not be posted publicly), but you will have a chance to revise your essay, if you wish, before they are shared.
 
 
 <font color = "#114B5F"><b>9/12/21</b></font>  
@@ -42,14 +42,11 @@ You may be curious about the <a href = "handouts/grading rubric.pdf" target = "_
 
 #### Paper 1  
 <font color = "#114B5F"><b>Due: 9/16/2021, 9/23/2021, 9/27/2021, 10/8/2021</b></font>   
-<a href = "handouts/ID1 Essay1.pdf" target = "_blank">Paper 1</a> 
-
-Thoughts on <a href = "handouts/lens.pdf" target = "_blank">writing with a lens text</a>.  Also, don't forget about the <a href = "https://spscc.edu/sites/default/files/imce/students/LSS/Handout_They%20Say%20I%20Say%20templates%20all.pdf" target = "_blank">They Say, I Say</a> templates that can be quite helpful in working with written sources.
-
-
+<a href = "handouts/ID1 Essay1.pdf" target = "_blank">Paper 1</a>   
 <a href = "handouts/ID1 Essay1 peer.pdf" target = "_blank">Peer Review for Paper 1 before class</a>    
 <a href = "handouts/ID1 Essay1 peer inclass.pdf" target = "_blank">Peer Review for Paper 1 in class</a>
 
+Thoughts on <a href = "handouts/lens.pdf" target = "_blank">writing with a lens text</a>.  Also, don't forget about the <a href = "https://spscc.edu/sites/default/files/imce/students/LSS/Handout_They%20Say%20I%20Say%20templates%20all.pdf" target = "_blank">They Say, I Say</a> templates that can be quite helpful in working with written sources.
 
 #### Paper 2  
 <font color = "#114B5F"><b>Due: 10/12/2021, 10/19/2021, 10/28/2021 </b></font>   
@@ -101,7 +98,7 @@ Don't forget about the <a href = "https://spscc.edu/sites/default/files/imce/stu
 The worksheet was taken directly from the [Kean University Library](http://libguides.kean.edu/Library); [original source](https://www.kean.edu/~library/handouts/Citing_Sources_Avoiding_Plagiarism_Scenarios.pdf).
 
 
-Thank you to Vin de Silva, Gizem Karaali, Dara Regaignon, and Kara Wittman for ideas and helpful conversations which led to these assignments.
+Thank you to Vin de Silva, Gizem Karaali, Dara Regaignon, and Kara Wittman for ideas and helpful conversations which led to the assignments.
 
 ```{r echo = FALSE, eval = FALSE}
 
