@@ -78,15 +78,17 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 * Borges, J.L. (1941) "The Babylon lottery." *Ficciones*. (on Sakai)      
 
-9/16    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+9/16 <i class="fas fa-video"></i> <a href = "https://www.imdb.com/title/tt0039595/" targe = "_blank">Magic Town</a> (1947), directed by William A. Wellman, RKO Studios. (on Video47)
 
 <font color = "#114B5F"><b>
-9/16    Due (Thursday, 11:59pm to Sakai): Micro-essay for paper 1
+9/16    Library Day  
+        Due (bring with you on paper): library notes 
+</b> </font> 
+
+<font color = "#114B5F"><b>
+9/17    Due (Friday, 11:59pm to Sakai): Micro-essay for paper 1
 </b> </font>
-
-<i class="fas fa-comment-dots"></i> ideas of fate vs. chance 
-
-* Dostoevsky, F. (1866) *The Gambler*. (Access via <a href = "https://www.gutenberg.org/files/2197/2197-h/2197-h.htm" target = "_blank">Project Gutenberg</a>) 
 
 
 
@@ -94,6 +96,12 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 
 9/21  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+
+<i class="fas fa-comment-dots"></i> ideas of fate vs. chance 
+
+* Dostoevsky, F. (1866) *The Gambler*. (Access via <a href = "https://www.gutenberg.org/files/2197/2197-h/2197-h.htm" target = "_blank">Project Gutenberg</a>) 
+
+9/23  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
 
 <i class="fas fa-gamepad"></i> <a href = "http://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm?candy=1" target = "_blank">Sampling applet</a>
  
@@ -104,13 +112,7 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 * Radwin, D. (October 5, 2009). "High response rates don’t ensure survey accuracy."  *The Chronicle of Higher Education*. (on Sakai)   
 * Ranganathan, M. (November 4, 2014), <a href = "https://blogs.scientificamerican.com/guest-blog/where-are-the-real-errors-in-political-polls/" target = "_blank">Where are the real errors in political polls?"</a>, *Scientific American*.     
 
-9/23  <i class="fas fa-video"></i> <a href = "https://www.imdb.com/title/tt0039595/" targe = "_blank">Magic Town</a> (1947), directed by 
-William A. Wellman, RKO Studios. (on Video47)
 
-<font color = "#114B5F"><b>
-9/23    Library Day  
-        Due (bring with you on paper): library notes 
-</b> </font>  
 
 ```{r eval = FALSE, echo = FALSE}
 * [skim don't read:]  Meng, X.-L. (2018) "Statistical Paradises and Paradoxes in Big Data:  law of large populations, big data paradox, and the 2016 US presidential election."  *The Annals of Applied Statistics*.  https://projecteuclid.org/download/pdfview_1/euclid.aoas/1532743473  [n.b., This article is very technical.  You should **skim **it to get the basic ideas of statistical modeling to address issues of non-random sampling.  **Do not try to understand the technical details**.]
