@@ -1,7 +1,7 @@
 ---
 title: "Schedule"
 description: |
-  Most of the readings are available either via Sakai or hyperlinks.  Don't forget to find "The Gambler" by Dostoevsky. If you can't find a reading, just ask!
+  Most of the readings are available either via Sakai or hyperlinks. If you can't find a reading, just ask!
 ---
 
 
@@ -76,7 +76,7 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 <i class="fas fa-comment-dots"></i> an interesting metaphor  
 
-* Borges, J.L.  "The Babylon lottery." *Ficciones*. (on Sakai)      
+* Borges, J.L. (1941) "The Babylon lottery." *Ficciones*. (on Sakai)      
 
 9/16    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
 
@@ -86,7 +86,7 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 <i class="fas fa-comment-dots"></i> ideas of fate vs. chance 
 
-* Dostoevsky, F.  *The Gambler*. (you'll need to find it)  
+* Dostoevsky, F. (1866) *The Gambler*. (Access via <a href = "https://www.gutenberg.org/files/2197/2197-h/2197-h.htm" target = "_blank">Project Gutenberg</a>) 
 
 
 
