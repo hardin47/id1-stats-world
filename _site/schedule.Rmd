@@ -30,7 +30,7 @@ Every day:
 
 * Tversky, A. and Kahneman, D. (1974). "Judgment under uncertainty: heuristics and biases."  *Science*, vol 185, pgs 1124-1131. (https://library.claremont.edu/ -- log in & search!)  
 * Tversky, A., & Kahneman, D. (1971). "Belief in the law of small numbers." *Psychological Bulletin*, 76(2), 105–110. (https://library.claremont.edu/ -- log in & search!)  
-* The Decision Lab, "Why do we think a random event is more or less likely to occur if it happened several times in the past?" https://thedecisionlab.com/biases/gamblers-fallacy/
+* The Decision Lab, <a href = "https://thedecisionlab.com/biases/gamblers-fallacy/" target = "_blank">Why do we think a random event is more or less likely to occur if it happened several times in the past?"</a>
 
 * [optional] Utts, J. (2005/2015) "Psychological Influences on Personal Probabilities," chp 17 & "When Intuition Differs from Relative Frequency," chp 18. (on Sakai). 
 
@@ -53,7 +53,7 @@ Every day:
 <i class="fas fa-comment-dots"></i> algorithms in sports  
 
 * Lewis, M. (2003) *Moneyball*, pgs 66 - 73 and 272 - 275. (on Sakai)
-* Ross, T. (June 25, 2015) "Welcome to smarter basketball." *The Atlantic*.    https://www.theatlantic.com/entertainment/archive/2015/06/nba-data-analytics/396776/  
+* Ross, T. (June 25, 2015) <a href = "https://www.theatlantic.com/entertainment/archive/2015/06/nba-data-analytics/396776/" target = "_blank">Welcome to smarter basketball."</a> *The Atlantic*.     
 
 ```{r echo = FALSE, eval = FALSE}
   ## Week 3 (Fiction)
@@ -95,17 +95,17 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 9/21  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
 
-<i class="fas fa-gamepad"></i> Sampling applet:   
-http://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm?candy=1 
+<i class="fas fa-gamepad"></i> <a href = "http://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm?candy=1" target = "_blank">Sampling applet</a>
+ 
 
 <i class="fas fa-comment-dots"></i> random samples are key
 
 * Bryson, M. (1976).  "The Literary Digest poll: making of a statistical myth." *The American Statistician*, vol 30 (no 4), pages 184-185. (on Sakai)  
 * Radwin, D. (October 5, 2009). "High response rates don’t ensure survey accuracy."  *The Chronicle of Higher Education*. (on Sakai)   
-* Ranganathan, M. (November 4, 2014), "Where are the real errors in political polls?", *Scientific American*.  https://blogs.scientificamerican.com/guest-blog/where-are-the-real-errors-in-political-polls/    
+* Ranganathan, M. (November 4, 2014), <a href = "https://blogs.scientificamerican.com/guest-blog/where-are-the-real-errors-in-political-polls/" target = "_blank">Where are the real errors in political polls?"</a>, *Scientific American*.     
 
-9/23  <i class="fas fa-video"></i> Magic Town (1947), directed by 
-William A. Wellman, RKO Studios. https://www.imdb.com/title/tt0039595/  (on Video47)
+9/23  <i class="fas fa-video"></i> <a href = "https://www.imdb.com/title/tt0039595/" targe = "_blank">Magic Town</a> (1947), directed by 
+William A. Wellman, RKO Studios. (on Video47)
 
 <font color = "#114B5F"><b>
 9/23    Library Day  
