@@ -87,12 +87,11 @@ Papers should be in 12-point font, have one-inch margins, and be double spaced. 
 ## Reading.  
 There will be a substantial amount of reading in this class (see the [schedule](schedule)).  The source of the readings are:
 
-
-* Huntley – hopefully you already know where this is  (or feel free to buy the texts online).
-
 * Sakai – most of your readings will be available electronically via Sakai. 
 
 * Electronic Journals – some of your readings will be available online via the library's electronic journal database.  This database is fairly straightforward to search, but you will also get an orientation to this and other databases on your library orientation day.
+
+* Electronic sources - some of the readings are hyper-linked from the [schedule](schedule) page.  If you use the sources in your writing, be sure to investigate proper citation methods.
 
 
 ## Writing Center.  
@@ -105,7 +104,7 @@ To make an appointment with a Writing or Speaking Partner, please log on to the 
 #### Writing Partner
 Writing Partner: Chris Meng
 
-ID1 has an attached Writing Partner, Chris Meng, to help students develop their writing skills. Chris is a senior Math major at Pomona. He has worked at the Writing Center since his sophomore year. You will meet with him throughout the semester to brainstorm ideas and revise drafts. As an attached Writing Partner, Chris will know the expectations for each assignment and can make sure you are on track. He is a resource to help you hone your writing skills and feel comfortable with college-level writing.
+ID1 has an attached Writing Partner, Chris Meng, to help students develop their writing skills. Chris is a senior psychology major & math minor at Pomona. He has worked at the Writing Center since his sophomore year. You will meet with him throughout the semester to brainstorm ideas and revise drafts. As an attached Writing Partner, Chris will know the expectations for each assignment and can make sure you are on track. He is a resource to help you hone your writing skills and feel comfortable with college-level writing.
 
 While there are set times when you must meet with Chris (see the assignments for specific dates), you are encouraged to meet with him whenever you feel stuck, want to talk through an idea, or want feedback on your writing for the course.  
 
@@ -121,18 +120,27 @@ One other library resources is their subject specific <a href = "https://libguid
 
 
 ## Academic Honesty.  
-There is a description of Pomona's Statement on Academic Honesty in the Student Handbook.  Below I have provided the basic tenants of the policy.  In ID1, we will discuss appropriate ways to cite sources.  However, you are expected to abide by all the principles in the document.  The basic idea is that you should never present other's ideas as your own!  Please contact me if you have any questions.
 
-1. On independent assignments, students do not represent the ideas/language of others as theirs  
-2. Students do not destroy/alter the work of others  
-3. Students do not give/receive assistance with exams  
-4. Students do not represent their work done for another course as original for their current course  
-5. Students do not alter or fabricate data for research or laboratory projects  
+You are on your honor to present only your work as part of your course  assessments.  Below, I've provided Pomona's academic honesty policy which is available in the Student Handbook. But before the policy, I've given some thoughts on cheating which I have taken from Nick Ball's CHEM 147 Collective (thank you, Prof Ball!).  Prof Ball gives us all something to think about when we are learning in a classroom as well as on our journey to become scientists and professionals:
+
+There are many known reasons why we may feel the need to "cheat" on problem sets or exams:
+
+  * An academic environment that values grades above learning.
+  * Financial aid is critical for remaining in school that places undue pressure on maintaining a high GPA.
+  * Navigating school, work, and/or family obligations that  have diverted focus from class.
+  * Challenges balancing coursework and mental health.
+  * Balancing academic, family, peer, or personal issues.
+
+Being accused of cheating – whether it has occurred or not – can be devastating for students. The college requires me to respond to potential academic dishonesty with a process that is very long and damaging. As your instructor, I care about you and want to offer alternatives to prevent us from having to go through this process. If you find yourself in a situation where "cheating" seems like the only option:
+
+**Please come talk to me.  We will figure this out together.**
+
+Pomona College is an academic community, all of whose members are expected to abide by ethical standards both in their conduct and in their exercise of responsibilities toward other members of the community. The college expects students to understand and adhere to basic standards of honesty and academic integrity. These standards include, but are not limited to, the following:
 
 Here are fun <a href = "https://library.claremont.edu/exploring-academic-integrity/" target = "_blank">academic honesty tutorials & quizes</a> you could work through to test your knowledge. 
 
 
-Please be sure to read <a href="http://catalog.pomona.edu/content.php?catoid=7&navoid=394" target = "_blank">Pomona's Policies on Academic Integrity</a>. <a href = "Academic_Integrity.doc" target = "_blank">Additional information</a> on citation, summarizing, and working with others so that you can successfully maintain academic integrity. You will be held to all these standards from this day forward.
+Please be sure to read <a href="http://catalog.pomona.edu/content.php?catoid=7&navoid=394" target = "_blank">Pomona's Policies on Academic Integrity</a>. <a href = "Academic_Integrity.doc" target = "_blank">Additional information</a> on citation, summarizing, and working with others so that you can successfully maintain academic integrity.
 
 ## Covid Safety Awareness.
 

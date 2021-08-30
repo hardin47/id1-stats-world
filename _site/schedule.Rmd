@@ -1,7 +1,7 @@
 ---
 title: "Schedule"
 description: |
-  Most of the readings are available either via Sakai or hyperlinks.  Don't forget to find "The Gambler" by Dostoevsky. If you can't find a reading, just ask!
+  Most of the readings are available either via Sakai or hyperlinks. If you can't find a reading, just ask!
 ---
 
 
@@ -76,7 +76,7 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 <i class="fas fa-comment-dots"></i> an interesting metaphor  
 
-* Borges, J.L.  "The Babylon lottery." *Ficciones*. (on Sakai)      
+* Borges, J.L. (1941) "The Babylon lottery." *Ficciones*. (on Sakai)      
 
 9/16    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
 
@@ -86,7 +86,7 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 <i class="fas fa-comment-dots"></i> ideas of fate vs. chance 
 
-* Dostoevsky, F.  *The Gambler*. (you'll need to find it)  
+* Dostoevsky, F. (1866) *The Gambler*. (Access via <a href = "https://www.gutenberg.org/files/2197/2197-h/2197-h.htm" target = "_blank">Project Gutenberg</a>) 
 
 
 
@@ -320,12 +320,13 @@ https://fivethirtyeight.com/features/dear-data-and-fivethirtyeight-want-you-to-v
 
 11/4   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
 
-<i class="fas fa-comment-dots"></i> acceptable variable choices
+<i class="fas fa-comment-dots"></i> other variable choices
 
 * <i class="fas fa-video"></i> Adichie, N. (2009) "The danger of a single story."  *TED* https://www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story
 * <i class="fas fa-gamepad"></i> Dollar Street https://www.gapminder.org/dollar-street consider a few families - what similarities and difference do you notice?; choose one variable and see how it varies across the "street".  
 * Jones, C.P. (2001) "Invited Commentary: 'Race,' Racism, and the Practice of Epidemiology."  *American Journal of Epidemiolgoy*, Vol 154, pgs 299-304. https://academic.oup.com/aje/article/154/4/299/61900
 * Krause, H. (August 27, 2021) "We need to fill in the blanks in our social identity data." *We All Count* https://weallcount.com/2021/08/27/we-need-to-fill-in-the-blanks-in-our-social-identity-data/
+* Gupta, S. (March 8, 2020) <a href = "https://www.sciencenews.org/article/census-2020-race-ethnicity-questions" target = "_blank">To fight discrimination, the U.S. census needs a different race question.</a> *ScienceNews*
 
 ## Week 11 (causation in medicine)
 
