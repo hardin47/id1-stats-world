@@ -40,7 +40,7 @@ Every day:
  
 ## Week 2 (sports)
 
- 9/7    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+ 9/7    Context: Alan <i class="fas fa-users"></i>  Discussion: Brendan <i class="fas fa-users"></i>  Summary: JC 
 
 <i class="fas fa-comment-dots"></i> chance & variability in sports  
 
@@ -48,7 +48,7 @@ Every day:
 * James, B.,  Albert, J.,  and Stern, H. (2005)  "Answering questions about baseball using statistics." *Anthology of Statistics in Sports.* Chp 15, pgs 111-117.  (on Sakai)
 
 
- 9/9    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+ 9/9    Context: Skylar <i class="fas fa-users"></i>  Discussion: Fiona <i class="fas fa-users"></i>  Summary: Kyle
 
 <i class="fas fa-comment-dots"></i> algorithms in sports  
 
@@ -72,12 +72,11 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 ## Week 3 (fiction)
 
-9/14      Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+9/14      Context: Andrea <i class="fas fa-users"></i>  Discussion: Nick <i class="fas fa-users"></i>  Summary: Fiona  
 
 <i class="fas fa-comment-dots"></i> an interesting metaphor  
 
 * Borges, J.L. (1941) "The Babylon lottery." *Ficciones*. (on Sakai)      
-
 
 9/16 <i class="fas fa-video"></i> <a href = "https://www.imdb.com/title/tt0039595/" targe = "_blank">Magic Town</a> (1947), directed by William A. Wellman, RKO Studios. (on Video47)
 
@@ -95,13 +94,13 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 ## Week 4 (sampling)
 
 
-9/21  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+9/21  Context: Claire <i class="fas fa-users"></i>  Discussion: Ty <i class="fas fa-users"></i>  Summary: Nico  
 
 <i class="fas fa-comment-dots"></i> ideas of fate vs. chance 
 
 * Dostoevsky, F. (1866) *The Gambler*. (Access via <a href = "https://www.gutenberg.org/files/2197/2197-h/2197-h.htm" target = "_blank">Project Gutenberg</a>) 
 
-9/23  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+9/23  Context: Aja <i class="fas fa-users"></i>  Discussion: Jacqueline <i class="fas fa-users"></i>  Summary: Ty  
 
 <i class="fas fa-gamepad"></i> <a href = "http://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm?candy=1" target = "_blank">Sampling applet</a>
  
@@ -125,7 +124,7 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 9/27      Due (Monday at 11:59pm on Sakai): Paper 1  
 </b> </font>
 
-9/28  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+9/28  Context:Nico <i class="fas fa-users"></i>  Discussion:Skylar <i class="fas fa-users"></i>  Summary:Jacqueline  
 
 <i class="fas fa-comment-dots"></i> 2020 election polling
 
@@ -189,7 +188,7 @@ NPR story on Iraqi death count (This American Life, Nov 3, 2006, “What’s in 
 
 ## Week 6  (decolonizing statistics)
 
-10/5   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+10/5   Context: Jacqueline <i class="fas fa-users"></i>  Discussion: Andrea <i class="fas fa-users"></i>  Summary: Nick  
 
 
 <i class="fas fa-comment-dots"></i> meaning of "mathematics"
@@ -197,7 +196,7 @@ NPR story on Iraqi death count (This American Life, Nov 3, 2006, “What’s in 
 * Iseke-Barnes, J. (2000) "Ethnomathematics and Language in Decolonizing Mathematics." *Race, Gender, & Class*, Vol 7, pgs 133-149.  https://www.jstor.org/stable/41674951  (log in to library to see full paper)
 * Su, F. (2015) "Mathematical Microaggressions."  *MAA Focus*. http://digitaleditions.walsworthprintgroup.com/publication/?i=278032&p=36   
 
-10/7   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+10/7   Context: Ty <i class="fas fa-users"></i>  Discussion: Aja <i class="fas fa-users"></i>  Summary: Mel  
 
 <i class="fas fa-comment-dots"></i> data and power
 
@@ -223,7 +222,7 @@ https://research.pomona.edu/janice-hudgings/teaching/bias-and-privilege-in-physi
 ## Week 7 (machine bias)
 
 
-10/12    Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+10/12    Context: Nick <i class="fas fa-users"></i>  Discussion: Claire <i class="fas fa-users"></i>  Summary: Andrea  
 
 <font color = "#114B5F"><b>
 10/12       Due (Tuesday, 11:59pm to Sakai): Micro-essay on Paper 2
@@ -238,7 +237,7 @@ https://research.pomona.edu/janice-hudgings/teaching/bias-and-privilege-in-physi
 <i class="fas fa-comment-dots"></i> consequences
 
 
-10/14   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary: 
+10/14   Context: Fiona <i class="fas fa-users"></i>  Discussion: Nico <i class="fas fa-users"></i>  Summary: Skylar 
 
 * Castelvecchi, D. (November 18, 2020) "Is facial recognition too biased to be let loose?" *Nature* https://www.nature.com/articles/d41586-020-03186-4 
 * Simonite, T (2021) "What really happened when Google ousted Timnit Gebru." *Wired* https://www.wired.com/story/google-timnit-gebru-ai-what-really-happened/
@@ -279,14 +278,15 @@ https://github.com/hadley/stats337
 ## Week 9 (data viz)
 
 
-10/26   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+10/26   Context: Mel <i class="fas fa-users"></i>  Discussion: Arsh <i class="fas fa-users"></i>  Summary: Claire  
 
 <i class="fas fa-comment-dots"></i> story telling
 
-* Lupi, G. and Posavec, S. (2016) In particular, weeks: 1, 14, 17, 18, 22, 24, 39, & 52. *Dear Data*.  http://www.dear-data.com/by-week/ * Mansky, J. (2018) "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color" *Smithsonian Mazagine*, https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/
+* Lupi, G. and Posavec, S. (2016) In particular, weeks: 1, 14, 17, 18, 22, 24, 39, & 52. *Dear Data*.  http://www.dear-data.com/by-week/   
+* Mansky, J. (2018) "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color" *Smithsonian Mazagine*, https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/
 * Weber, J. (2019) "How W.E.B. Du Bois meticulous visualized 20th-century black america." *Hyperallergic* https://hyperallergic.com/476334/how-w-e-b-du-bois-meticulously-visualized-20th-century-black-america/
 
-10/28  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+10/28  Context: Arsh <i class="fas fa-users"></i>  Discussion: JC <i class="fas fa-users"></i>  Summary: Aja  
 
 <i class="fas fa-comment-dots"></i> truth finding
 
@@ -320,7 +320,7 @@ Some tips are here:
 https://fivethirtyeight.com/features/dear-data-and-fivethirtyeight-want-you-to-visualize-your-podcast-habits/
 
 
-11/4   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+11/4   Context: JC <i class="fas fa-users"></i>  Discussion: Mel <i class="fas fa-users"></i>  Summary: Arsh  
 
 <i class="fas fa-comment-dots"></i> other variable choices
 
@@ -332,7 +332,7 @@ https://fivethirtyeight.com/features/dear-data-and-fivethirtyeight-want-you-to-v
 
 ## Week 11 (causation in medicine)
 
-11/9  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+11/9  Context: Brendan <i class="fas fa-users"></i>  Discussion: Kyle <i class="fas fa-users"></i>  Summary: Alan  
 
 <i class="fas fa-comment-dots"></i> wellness programs
 
@@ -348,7 +348,7 @@ maybe this article on presenting quantitative information to patients
 ```
 
 
-11/11  Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+11/11  Context: Kyle <i class="fas fa-users"></i>  Discussion: Alan <i class="fas fa-users"></i>  Summary: Brendan  
 
 <i class="fas fa-comment-dots"></i> race vs. racism
 
@@ -417,7 +417,7 @@ maybe this article on presenting quantitative information to patients
 <i class="fas fa-comment-dots"></i> masks
 
 * Markel, H., Lipman, H., and Navarro, J.A. et al. (2007) "Nonpharmaceutical interventions implemented by US cities during the 1918-1919 influenza pandemic" *Journal of the American Medical Association,* vol 298, pgs 644-654. https://jamanetwork.com/journals/jama/fullarticle/208354  
-* MacIntyre C. et al. () "A cluster randomised trial of cloth masks compared with medical masks in healthcare workers." *Infection diseases*
+* MacIntyre C. et al. (2015) "A cluster randomised trial of cloth masks compared with medical masks in healthcare workers." *Infection diseases*, 5:e006577. https://bmjopen.bmj.com/content/5/4/e006577.short
 * Doung-ngern, P. et al. (2020) "Case-Control Study of Use of Personal Protective Measures and Risk for SARS-CoV 2 Infection, Thailand." *Emerging Infectious Diseases*, vol 26.  https://wwwnc.cdc.gov/eid/article/26/11/20-3003_article
 
 11/25     Thanksgiving
