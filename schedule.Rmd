@@ -53,7 +53,8 @@ Every day:
 <i class="fas fa-comment-dots"></i> algorithms in sports  
 
 * Lewis, M. (2003) *Moneyball*, pgs 66 - 73 and 272 - 275. (on Sakai)
-* Ross, T. (June 25, 2015) <a href = "https://www.theatlantic.com/entertainment/archive/2015/06/nba-data-analytics/396776/" target = "_blank">Welcome to smarter basketball."</a> *The Atlantic*.     
+* Ross, T. (June 25, 2015) <a href = "https://www.theatlantic.com/entertainment/archive/2015/06/nba-data-analytics/396776/" target = "_blank">Welcome to smarter basketball."</a> *The Atlantic*.  
+* Rynston-Lobel, E. (May 21, 2021) <a href = "https://www.si.com/college/2021/05/21/kevin-kelley-high-school-never-punts-presbyterian" target = "_blank">The Kevin Kelley Way: The Unorthodox High School Coach Brings His Style to College Football</a> *Sports Illustrated*.
 
 ```{r echo = FALSE, eval = FALSE}
   ## Week 3 (Fiction)
