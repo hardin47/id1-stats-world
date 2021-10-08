@@ -83,11 +83,11 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 
 <font color = "#114B5F"><b>
 9/16    Library Day - meet in th Digital Tool Shed in Honnold-Mudd library, see Sakai resources for map  
-        Due (bring with you on paper): library notes  (see paper1 link on Assignments tab)
+        Due (bring with you on paper): library notes  (see Essay 1 link on Assignments tab)
 </b> </font> 
 
 <font color = "#114B5F"><b>
-9/17    Due (Friday, 11:59pm to Sakai): Micro-essay for paper 1 (see paper1 link on Assignments tab)
+9/17    Due (Friday, 11:59pm to Sakai): Micro-essay for Essay 1 (see Essay 1 link on Assignments tab)
 </b> </font>
 
 
@@ -122,7 +122,7 @@ Calvino, I. How much shall we bet?  Cosmicomics. (Sakai)
 ## Week 5 (elections)
 
 <font color = "#114B5F"><b>
-9/27      Due (Monday at 11:59pm on Sakai): Paper 1  
+9/27      Due (Monday at 11:59pm on Sakai): Essay 1  
 </b> </font>
 
 9/28  Context:Nico <i class="fas fa-users"></i>  Discussion:Skylar <i class="fas fa-users"></i>  Summary:Jacqueline  
@@ -139,7 +139,7 @@ https://www.pewresearch.org/methods/2021/03/02/what-2020s-election-poll-errors-t
 
 
 
-9/30      Peer review of Paper 1  
+9/30      Peer review of Essay 1  
 <font color = "#114B5F"><b>
 9/30      Due (printed in class): completed peer reviews
 </b> </font>
@@ -217,7 +217,7 @@ https://research.pomona.edu/janice-hudgings/teaching/bias-and-privilege-in-physi
 ```
 
 <font color = "#114B5F"><b>
-10/8     Due (Friday, by 11:59pm to Sakai): Paper 1, after peer review
+10/8     Due (Friday, by 11:59pm to Sakai): Essay 1, after peer review
 </b> </font>
 
 ## Week 7 (machine bias)
@@ -234,14 +234,15 @@ https://research.pomona.edu/janice-hudgings/teaching/bias-and-privilege-in-physi
 
 
 
-<i class="fas fa-comment-dots"></i> algorithmic bias
 
 
 10/14   
 
 <font color = "#114B5F"><b>
-10/15       Due (Friday, 11:59pm to Sakai): Micro-essay on Paper 2
+10/15       Due (Friday, 11:59pm to Sakai): Micro-essay on Essay 2
 </b> </font>
+
+<i class="fas fa-comment-dots"></i> algorithmic bias
 
 * <i class="fas fa-video"></i> Coded Bias (2020).  Shalini Kantayya, producer.  90 min.  [will watch in class]
 
@@ -275,7 +276,7 @@ https://github.com/hadley/stats337
 10/21   Context: Mel <i class="fas fa-users"></i>  Discussion: Arsh <i class="fas fa-users"></i>  Summary: Claire  
 
 <font color = "#114B5F"><b>
-10/21     Due (Thursday, by 11:59pm, to Sakai): Paper 2
+10/21     Due (Thursday, by 11:59pm, to Sakai): Essay 2
 </b> </font>
 
 <i class="fas fa-comment-dots"></i> truth finding
@@ -289,7 +290,8 @@ https://github.com/hadley/stats337
 ## Week 9 (data viz)
 
 
-10/26      Peer review Paper 2 
+10/26      Peer review Essay 2
+
 <font color = "#114B5F"><b>
 10/26      Due (printed in class): completed peer review
 </b> </font>
@@ -304,7 +306,7 @@ https://github.com/hadley/stats337
 * Weber, J. (2019) "How W.E.B. Du Bois meticulous visualized 20th-century black america." *Hyperallergic* https://hyperallergic.com/476334/how-w-e-b-du-bois-meticulously-visualized-20th-century-black-america/
 
 <font color = "#114B5F"><b>
-10/31  Due (Sunday by 11:59pm, to Sakai): Paper 2, after peer review
+10/31  Due (Sunday by 11:59pm, to Sakai): Essay 2, after peer review
 </b> </font>
 
 ```{r echo = FALSE, eval = FALSE}
@@ -368,7 +370,7 @@ maybe this article on presenting quantitative information to patients
 
 
 <font color = "#114B5F"><b>
-11/11     Due (Thursday, 11:59pm to Sakai): Micro-essay on paper 3
+11/11     Due (Thursday, 11:59pm to Sakai): Micro-essay on Essay 3
 </b> </font>
 
 
@@ -394,7 +396,7 @@ maybe this article on presenting quantitative information to patients
 * Morris, J. (August 17, 2021) "Israeli data: How can efficacy vs. severe disease be strong when 60% of hospitalized are vaccinated?", https://www.covid-datascience.com/post/israeli-data-how-can-efficacy-vs-severe-disease-be-strong-when-60-of-hospitalized-are-vaccinated
 
 <font color = "#114B5F"><b>
-11/21     Due (Sunday by 11:59pm to Sakai): Annotated Bibliography for paper 3
+11/21     Due (Sunday by 11:59pm to Sakai): Annotated Bibliography for Essay 3
 </b> </font>
 
 ```{r eval = FALSE, echo = FALSE}
@@ -434,7 +436,7 @@ maybe this article on presenting quantitative information to patients
 11/25     Thanksgiving
 
 <font color = "#114B5F"><b>
-11/28      Due (Sunday by 11:59pm to Sakai): Paper 3
+11/28      Due (Sunday by 11:59pm to Sakai): Essay 3
 </b> </font>
 
 ```{r echo = FALSE, eval = FALSE}
@@ -476,7 +478,7 @@ Sidney Lumet, Orion-Nova Productions. https://www.imdb.com/title/tt0050083/  (in
 12/9   No class - reading days
 
 
-12/10     Due (Friday by 11:59pm to Sakai): Paper 3, *after* peer review  
+12/10     Due (Friday by 11:59pm to Sakai): Essay 3, *after* peer review  
 </b> </font>
 
 ```{r echo = FALSE, eval = FALSE}
