@@ -305,9 +305,7 @@ https://github.com/hadley/stats337
 * Mansky, J. (2018) "W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color" *Smithsonian Mazagine*, https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/
 * Weber, J. (2019) "How W.E.B. Du Bois meticulous visualized 20th-century black america." *Hyperallergic* https://hyperallergic.com/476334/how-w-e-b-du-bois-meticulously-visualized-20th-century-black-america/
 
-<font color = "#114B5F"><b>
-10/31  Due (Sunday by 11:59pm, to Sakai): Essay 2, after peer review
-</b> </font>
+
 
 ```{r echo = FALSE, eval = FALSE}
 * Elliott, K. (May 2, 2016) "39 studies about human perception in 30 minutes." *Medium*.  https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73
@@ -320,6 +318,9 @@ https://github.com/hadley/stats337
 
 ## Week 10 (variables)
 
+<font color = "#114B5F"><b>
+11/2  Due (Tuesday by 11:59pm, to Sakai): Essay 2, after peer review
+</b> </font>
 
 11/2   Context: JC <i class="fas fa-users"></i>  Discussion: Mel <i class="fas fa-users"></i>  Summary: Arsh  
 
