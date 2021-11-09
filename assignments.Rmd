@@ -57,6 +57,10 @@ Thoughts on <a href = "handouts/lens.pdf" target = "_blank">writing with a lens 
 #### Essay 3  
 <font color = "#114B5F"><b>Due: 11/11/2021, 11/21/2021, 11/28/2021, 12/10/2021 </b></font>   
 <a href = "handouts/ID1 Essay3.pdf" target = "_blank">Essay 3</a> 
+<a href = "handouts/ID1 Essay3 peer.pdf" target = "_blank">Peer Review for Essay 3</a>   
+
+<a href = "handouts/ID1 annotated bib.pdf" target = "_blank">handout on annotated bibliographies</a> 
+
 
 Your final essay will center around a research question (that will become a thesis statement) which will be argued using sources that you find.
 The research question will continue to evolve over the life of the project, but you should keep coming back to the (evolving) idea you want to argue.
@@ -85,11 +89,12 @@ In addition to a succinct and arguable thesis statement, your essay should inclu
 * Using "statistics" to show connections between race and disease sets up a structure of biological differences instead of focusing on systemic disparities in healthcare and other socio-economic factors.  See "Racial Health Disparities and Covid-19 -- Caution and Context" in *New England Journal of Medicine* https://www.nejm.org/doi/full/10.1056/NEJMp2012910.
 * Statistical models used to argue biological determinism (e.g., see **The Mismeasure of Man** by Stephen Jay Gould and related controversy ... http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001071 and http://blogs.nature.com/news/2011/06/did_stephen_jay_gould_fudge_hi.html )
 * If scientific knowledge, data-based arguments,  and logical & critical reasoning are *sound* ways of discovery, why were some of the statistics (STEM generally) founders so prone to racist / misogynist / ableist / etc. ideas? That is, what can we *know* from science and what can we *never know* from science?
+* Weapons of Math Destruction (Cathy O'Neil) are 1. opaque, 2. at a large scale, 3. destructive.  What WMDs are out there?  Wellness programs, employment tests, college applications, credit scores, insurance, etc.
 
 
-[handout on annotated bibliographies](../ID1/ID1 annotated bib.pdf) 
+<a href = "handouts/ID1 annotated bib.pdf" target = "_blank">handout on annotated bibliographies</a> 
 
-[handout on citing sources](../ID1/ID1 citing.pdf)  (Link to the   [solutions](https://www.kean.edu/~library/handouts/Answer_Guide_Citing_Sources_Avoiding_Plagiarism_Scenarios.pdf).)    
+<a href = "handouts/ID1 citing.pdf" target = "_blank">handout on citing sources</a> (Link to the   [solutions](https://www.kean.edu/~library/handouts/Answer_Guide_Citing_Sources_Avoiding_Plagiarism_Scenarios.pdf).)    
 
 The worksheet was taken directly from the [Kean University Library](http://libguides.kean.edu/Library); [original source](https://www.kean.edu/~library/handouts/Citing_Sources_Avoiding_Plagiarism_Scenarios.pdf).
 

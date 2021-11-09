@@ -395,6 +395,7 @@ maybe this article on presenting quantitative information to patients
 
 * Young-Saver, D. (December 13, 2020) "What does 95% effective mean?  Teaching the math of vaccine efficacy." *The New York Times* https://www.nytimes.com/2020/12/13/learning/what-does-95-effective-mean-teaching-the-math-of-vaccine-efficacy.html
 * Morris, J. (August 17, 2021) "Israeli data: How can efficacy vs. severe disease be strong when 60% of hospitalized are vaccinated?", https://www.covid-datascience.com/post/israeli-data-how-can-efficacy-vs-severe-disease-be-strong-when-60-of-hospitalized-are-vaccinated
+* Doung-ngern, P. et al. (2020) "Case-Control Study of Use of Personal Protective Measures and Risk for SARS-CoV 2 Infection, Thailand." *Emerging Infectious Diseases*, vol 26.  https://wwwnc.cdc.gov/eid/article/26/11/20-3003_article
 
 <font color = "#114B5F"><b>
 11/21     Due (Sunday by 11:59pm to Sakai): Annotated Bibliography for Essay 3
@@ -426,7 +427,7 @@ maybe this article on presenting quantitative information to patients
 
 ## Week 13 (pandemics)
 
-11/23   Context: <i class="fas fa-users"></i>  Discussion: <i class="fas fa-users"></i>  Summary:  
+11/23   Context: Professor Hardin <i class="fas fa-users"></i>  Discussion: Professor Hardin <i class="fas fa-users"></i>  Summary: Professor Hardin 
 
 <i class="fas fa-comment-dots"></i> masks
 
