@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -1034,10 +1035,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 1.5em;
   }
 
-  .figure img {
-    width: 100%;
-  }
-
   .figure .caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
@@ -1867,6 +1864,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
           return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1881,6 +1884,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1980,6 +2008,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -2002,7 +2032,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2041,7 +2071,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11.3/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2267,94 +2297,334 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-byline">
-  Jo Hardin <a href="https://id1-stats-world.netlify.app/" class="uri">https://id1-stats-world.netlify.app/</a> (Pomona College)<a href="https://hardin47.netlify.app/" class="uri">https://hardin47.netlify.app/</a>
+  Jo Hardin <a href="https://id1-stats-world.netlify.app/"
+class="uri">https://id1-stats-world.netlify.app/</a> (Pomona College)<a
+href="https://hardin47.netlify.app/"
+class="uri">https://hardin47.netlify.app/</a>
   
 
 </div>
 
 <div class="d-article">
 <h2 id="the-course.">The Course.</h2>
-<p>The main idea behind this course is to get the participants (that’s you) to leave in December questioning every number you come across: in the media, at sporting events, when researching for another class, when carrying out your own research, etc. Certainly there are some good numbers out there, but I hope that you will start asking yourself questions like “where did that come from?”, “what if you looked at it from another angle?”, “what if we knew the rest of the information/data?” We’ll look at sources that range from journalism to scholarly writing to fiction, and we’ll see how statistics are used and misused. As in many ID1 courses, the goal is for you to become critical inquirers.</p>
-<p><strong>Anonymous Feedback</strong> As someone who is constantly learning and growing in many ways, I welcome your feedback about the course, the classroom dynamics, or anything else you’d like me to know. There is a link to an anonymous feedback form on the landing page of our Sakai webpage. Please provide me with feedback at any time!</p>
+<p>The main idea behind this course is to get the participants (that’s
+you) to leave in December questioning every number you come across: in
+the media, at sporting events, when researching for another class, when
+carrying out your own research, etc. Certainly there are some good
+numbers out there, but I hope that you will start asking yourself
+questions like “where did that come from?”, “what if you looked at it
+from another angle?”, “what if we knew the rest of the
+information/data?” We’ll look at sources that range from journalism to
+scholarly writing to fiction, and we’ll see how statistics are used and
+misused. As in many ID1 courses, the goal is for you to become critical
+inquirers.</p>
+<p><strong>Anonymous Feedback</strong> As someone who is constantly
+learning and growing in many ways, I welcome your feedback about the
+course, the classroom dynamics, or anything else you’d like me to know.
+There is a link to an anonymous feedback form on the landing page of our
+Sakai webpage. Please provide me with feedback at any time!</p>
 <h2 id="student-learning-outcomes.">Student Learning Outcomes.</h2>
 <p>By the end of the semester, students will be able to:</p>
 <ul>
-<li>describe the inherent and natural variability in the world around them.</li>
-<li>argue thoughtfully that models produce information about trends and not individuals.</li>
-<li>articulate the ways in which data are hard to collect (bias, opinions change, genetic info, sparse availability,…).</li>
-<li>combine current and historical documents to understand some of the negative impacts on society due to the statistical sciences.</li>
-<li>identify ways in which graphs are effectively and ineffectively used to communicate.</li>
-<li>understand the writing process and know of concrete ways they can improve as writers.</li>
-<li>access various resources around campus to enhance their educational path.</li>
+<li>describe the inherent and natural variability in the world around
+them.</li>
+<li>argue thoughtfully that models produce information about trends and
+not individuals.</li>
+<li>articulate the ways in which data are hard to collect (bias,
+opinions change, genetic info, sparse availability,…).</li>
+<li>combine current and historical documents to understand some of the
+negative impacts on society due to the statistical sciences.</li>
+<li>identify ways in which graphs are effectively and ineffectively used
+to communicate.</li>
+<li>understand the writing process and know of concrete ways they can
+improve as writers.</li>
+<li>access various resources around campus to enhance their educational
+path.</li>
 </ul>
-<h2 id="diversity-and-inclusion-statement.">Diversity and Inclusion Statement.</h2>
+<h2 id="diversity-and-inclusion-statement.">Diversity and Inclusion
+Statement.</h2>
 <p>(adapted from Monica Linden, Brown University):</p>
-<p>In an ideal world, science would be objective. However, much of science is subjective and is historically built on a small subset of privileged voices. In this class, we will make an effort to recognize how science (and statistics!) has played a role in both understanding diversity as well as in promoting systems of power and privilege. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a scientific nature. Integrating a diverse set of experiences is important for a more comprehensive understanding of science. I would like to discuss issues of diversity in statistics as part of the course from time to time.</p>
-<p>Please contact me if you have any suggestions to improve the quality of the course materials.</p>
-<p>Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:</p>
+<p>In an ideal world, science would be objective. However, much of
+science is subjective and is historically built on a small subset of
+privileged voices. In this class, we will make an effort to recognize
+how science (and statistics!) has played a role in both understanding
+diversity as well as in promoting systems of power and privilege. I
+acknowledge that it is possible that there may be both overt and covert
+biases in the material due to the lens with which it was written, even
+though the material is primarily of a scientific nature. Integrating a
+diverse set of experiences is important for a more comprehensive
+understanding of science. I would like to discuss issues of diversity in
+statistics as part of the course from time to time.</p>
+<p>Please contact me if you have any suggestions to improve the quality
+of the course materials.</p>
+<p>Furthermore, I would like to create a learning environment for my
+students that supports a diversity of thoughts, perspectives and
+experiences, and honors your identities (including race, gender, class,
+sexuality, religion, ability, etc.) To help accomplish this:</p>
 <ul>
-<li>If you have a name and/or set of pronouns that differ from those that appear in your official records, please let me know!</li>
-<li>If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. You can also relay information to me via your mentors. I want to be a resource for you. If you prefer to speak with someone outside of the course, the math liaisons, Dean of Students, or QSC staff are all excellent resources. I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. As a participant in course discussions, you should also strive to honor the diversity of your classmates.</li>
+<li>If you have a name and/or set of pronouns that differ from those
+that appear in your official records, please let me know!</li>
+<li>If you feel like your performance in the class is being impacted by
+your experiences outside of class, please don’t hesitate to come and
+talk with me. You can also relay information to me via your mentors. I
+want to be a resource for you. If you prefer to speak with someone
+outside of the course, the math liaisons, Dean of Students, or QSC staff
+are all excellent resources. I (like many people) am still in the
+process of learning about diverse perspectives and identities. If
+something was said in class (by anyone) that made you feel
+uncomfortable, please talk to me about it. As a participant in course
+discussions, you should also strive to honor the diversity of your
+classmates.</li>
 </ul>
 <h2 id="daily.">Daily.</h2>
-<h4 id="in-class-please-no-phones-or-computers.">In class: please no phones or computers.</h4>
-<p>In class we’ll mostly be discussing the readings (which can be found in the course <a href="schedule">schedule</a>.) You will each be responsible for leading the class on two different occasions: once to contextualize the readings and once to lead a discussion on the readings. You are welcome to run the class in any of a variety of formats (i.e., putting students in groups to brainstorm, asking each student to respond to a question, asking provocative questions, etc.) It will be very helpful for you to talk with me before your assigned day so that we can devise a strategy and a set of topics/questions for your discussion. We will not discuss every word that you read, but you should complete all the readings (some of which will be used in the papers) and be prepared to discuss them.</p>
-<p>Even if you are not assigned to lead a discussion, you will be expected to participate and contribute to the discussion every day. Class attendance is required. Your comments in class will be evaluated on how well they demonstrate familiarity with the reading and how they acknowledge and promote discussion by others. If you are one of the more talkative students, try to encourage others to contribute as well. If you have an idea that is somewhat off topic, write it down, and we’ll come back to it. Let’s try to keep the discussions moderately linear and on-topic.</p>
-<p><strong>contextualizing</strong> is not as easy as it looks. Remember that we have all done the readings, so you don’t need to rehash the details. We would, however, appreciate your overall thoughts on the readings, and, in particular, how the readings go together (or not). Your goal in contextualizing is to set the stage for the discussion: think big (picture). You should Google at least one thing (for example, the author, the NYT headlines on that day in history, etc.) to share with the class. By 5pm the day before you contextualize, you should send an email to me and your fellow discusser describing what you’ll say in the next class; your context should also be posted to the wiki by 5pm the day before class. Plan to contextualize for only a few minutes (5 min max).</p>
-<p><strong>discussing</strong> is probably harder than contextualizing. You will be responsible for keeping the discussion going for ~45 minutes. You should ask open ended questions (i.e., they can’t be answered with “yes” or “no” or “Frank did it”). You will also be responsible for sending the discussion questions via email to me and your fellow contextualizer by 5pm the day before you discuss. Additionally, please meet with me at least one day before you are leading the discussion so that we can talk about what you’ll be discussing.</p>
-<p><strong>summarizing</strong> is an important part of closing the loop on our discussion. You are responsible for writing up one class discussion (to the Sakai wiki). Do not try to recall every word that was said in the class period, but please report on the gist of the conversation and the most important / interesting ideas that were discussed. The summary is due within one week of the discussion.</p>
-<p><strong>discussion questions</strong> will be due (for every student) by midnight the day before the discussion. You should post at least one open-ended question to the wiki on Sakai. Your question(s) should reflect what you got out of the readings. You might consider the big picture, interesting concepts, questions you had on the reading, reflections after having read, etc.</p>
+<h4 id="in-class-please-no-phones-or-computers.">In class: please no
+phones or computers.</h4>
+<p>In class we’ll mostly be discussing the readings (which can be found
+in the course <a href="schedule">schedule</a>.) You will each be
+responsible for leading the class on two different occasions: once to
+contextualize the readings and once to lead a discussion on the
+readings. You are welcome to run the class in any of a variety of
+formats (i.e., putting students in groups to brainstorm, asking each
+student to respond to a question, asking provocative questions, etc.) It
+will be very helpful for you to talk with me before your assigned day so
+that we can devise a strategy and a set of topics/questions for your
+discussion. We will not discuss every word that you read, but you should
+complete all the readings (some of which will be used in the papers) and
+be prepared to discuss them.</p>
+<p>Even if you are not assigned to lead a discussion, you will be
+expected to participate and contribute to the discussion every day.
+Class attendance is required. Your comments in class will be evaluated
+on how well they demonstrate familiarity with the reading and how they
+acknowledge and promote discussion by others. If you are one of the more
+talkative students, try to encourage others to contribute as well. If
+you have an idea that is somewhat off topic, write it down, and we’ll
+come back to it. Let’s try to keep the discussions moderately linear and
+on-topic.</p>
+<p><strong>contextualizing</strong> is not as easy as it looks. Remember
+that we have all done the readings, so you don’t need to rehash the
+details. We would, however, appreciate your overall thoughts on the
+readings, and, in particular, how the readings go together (or not).
+Your goal in contextualizing is to set the stage for the discussion:
+think big (picture). You should Google at least one thing (for example,
+the author, the NYT headlines on that day in history, etc.) to share
+with the class. By 5pm the day before you contextualize, you should send
+an email to me and your fellow discusser describing what you’ll say in
+the next class; your context should also be posted to the wiki by 5pm
+the day before class. Plan to contextualize for only a few minutes (5
+min max).</p>
+<p><strong>discussing</strong> is probably harder than contextualizing.
+You will be responsible for keeping the discussion going for ~45
+minutes. You should ask open ended questions (i.e., they can’t be
+answered with “yes” or “no” or “Frank did it”). You will also be
+responsible for sending the discussion questions via email to me and
+your fellow contextualizer by 5pm the day before you discuss.
+Additionally, please meet with me at least one day before you are
+leading the discussion so that we can talk about what you’ll be
+discussing.</p>
+<p><strong>summarizing</strong> is an important part of closing the loop
+on our discussion. You are responsible for writing up one class
+discussion (to the Sakai wiki). Do not try to recall every word that was
+said in the class period, but please report on the gist of the
+conversation and the most important / interesting ideas that were
+discussed. The summary is due within one week of the discussion.</p>
+<p><strong>discussion questions</strong> will be due (for every student)
+by midnight the day before the discussion. You should post at least one
+open-ended question to the wiki on Sakai. Your question(s) should
+reflect what you got out of the readings. You might consider the big
+picture, interesting concepts, questions you had on the reading,
+reflections after having read, etc.</p>
 <h2 id="writing.">Writing.</h2>
-<p>As you know, this course has a large writing component. The majority of your grade will come from the writing you do. You will write 2 formal papers and a research paper. Additionally, there will be assigned weekly informal writings.</p>
-<p><strong>formal essays</strong> will be turned in as a micro-essay, then a final version, then a rewrite of the final version. Two of your peers, Chris, and I will give you comments on your paper; remember, our comments will never be entirely comprehensive and can only be as helpful as your paper is good. For example, if your final version of the paper is difficult to read because it is full of grammatical errors, we may comment mostly on those. If the rewrite fixes all of the grammatical errors, the paper still may receive a “C” grade due to poor understanding of the paper topic (on which we were unable to comment for the first paper because of the grammatical errors).</p>
-<p>Papers should be in 12-point font, have one-inch margins, and be double spaced. Include your name, the date, the course, and a title on every paper. Do not include a separate title page. Instructions for how / where / when to turn in papers is on the <a href="assignments">assignments</a> page.</p>
-<p><strong>research paper</strong> will include library research and primary sources. More later.</p>
-<p><strong>micro-essays</strong> will be assigned regularly as short (500 words) reflections on some aspect of the readings from class. You should feel free to be creative and to stretch out of your comfort zone when thinking about the readings and writing your reflections. The grades for the informal writings will be given based on effort and participation.</p>
+<p>As you know, this course has a large writing component. The majority
+of your grade will come from the writing you do. You will write 2 formal
+papers and a research paper. Additionally, there will be assigned weekly
+informal writings.</p>
+<p><strong>formal essays</strong> will be turned in as a micro-essay,
+then a final version, then a rewrite of the final version. Two of your
+peers, Chris, and I will give you comments on your paper; remember, our
+comments will never be entirely comprehensive and can only be as helpful
+as your paper is good. For example, if your final version of the paper
+is difficult to read because it is full of grammatical errors, we may
+comment mostly on those. If the rewrite fixes all of the grammatical
+errors, the paper still may receive a “C” grade due to poor
+understanding of the paper topic (on which we were unable to comment for
+the first paper because of the grammatical errors).</p>
+<p>Papers should be in 12-point font, have one-inch margins, and be
+double spaced. Include your name, the date, the course, and a title on
+every paper. Do not include a separate title page. Instructions for how
+/ where / when to turn in papers is on the <a
+href="assignments">assignments</a> page.</p>
+<p><strong>research paper</strong> will include library research and
+primary sources. More later.</p>
+<p><strong>micro-essays</strong> will be assigned regularly as short
+(500 words) reflections on some aspect of the readings from class. You
+should feel free to be creative and to stretch out of your comfort zone
+when thinking about the readings and writing your reflections. The
+grades for the informal writings will be given based on effort and
+participation.</p>
 <h2 id="reading.">Reading.</h2>
-<p>There will be a substantial amount of reading in this class (see the <a href="schedule">schedule</a>). The source of the readings are:</p>
+<p>There will be a substantial amount of reading in this class (see the
+<a href="schedule">schedule</a>). The source of the readings are:</p>
 <ul>
-<li><p>Sakai – most of your readings will be available electronically via Sakai.</p></li>
-<li><p>Electronic Journals – some of your readings will be available online via the library’s electronic journal database. This database is fairly straightforward to search, but you will also get an orientation to this and other databases on your library orientation day.</p></li>
-<li><p>Electronic sources - some of the readings are hyper-linked from the <a href="schedule">schedule</a> page. If you use the sources in your writing, be sure to investigate proper citation methods.</p></li>
+<li><p>Sakai – most of your readings will be available electronically
+via Sakai.</p></li>
+<li><p>Electronic Journals – some of your readings will be available
+online via the library’s electronic journal database. This database is
+fairly straightforward to search, but you will also get an orientation
+to this and other databases on your library orientation day.</p></li>
+<li><p>Electronic sources - some of the readings are hyper-linked from
+the <a href="schedule">schedule</a> page. If you use the sources in your
+writing, be sure to investigate proper citation methods.</p></li>
 </ul>
 <h2 id="writing-center.">Writing Center.</h2>
-<p>The Writing Center is open this semester! They open at full capacity after the second week of the semester, but they will be holding limited hours as soon as classes begin. Writing and Speaking Partners meet one-on-one with students to talk about their work and provide feedback at any stage of their preparation process. Trained to think deeply about rhetoric and communication across the curriculum, these student peers facilitate conversations about everything from ID1 papers to senior theses, lab reports to creative writing, giving presentations to developing strategies for reading and engaging more deeply in class discussions.</p>
-<p>Additionally, Jenny Thomas, the Assistant Director of College Writing and Language Diversity, offers specialized writing and speaking support for multilingual students navigating English as an additional language.</p>
-<p>To make an appointment with a Writing or Speaking Partner, please log on to the Portal and go to Academics &gt; Writing Center, or contact them at <a href="mailto:writing.center@pomona.edu" class="email">writing.center@pomona.edu</a>. All appointments will be made through the Portal as usual, and the meetings will be online–or sometimes in-person but outdoors. The Writing and Speaking Partners will be flexible both about the mode of consultation (phone, Zoom, email, Google docs, walk and talk, etc.) and about their hours in order to accommodate student needs.</p>
+<p>The Writing Center is open this semester! They open at full capacity
+after the second week of the semester, but they will be holding limited
+hours as soon as classes begin. Writing and Speaking Partners meet
+one-on-one with students to talk about their work and provide feedback
+at any stage of their preparation process. Trained to think deeply about
+rhetoric and communication across the curriculum, these student peers
+facilitate conversations about everything from ID1 papers to senior
+theses, lab reports to creative writing, giving presentations to
+developing strategies for reading and engaging more deeply in class
+discussions.</p>
+<p>Additionally, Jenny Thomas, the Assistant Director of College Writing
+and Language Diversity, offers specialized writing and speaking support
+for multilingual students navigating English as an additional
+language.</p>
+<p>To make an appointment with a Writing or Speaking Partner, please log
+on to the Portal and go to Academics &gt; Writing Center, or contact
+them at <a href="mailto:writing.center@pomona.edu"
+class="email">writing.center@pomona.edu</a>. All appointments will be
+made through the Portal as usual, and the meetings will be online–or
+sometimes in-person but outdoors. The Writing and Speaking Partners will
+be flexible both about the mode of consultation (phone, Zoom, email,
+Google docs, walk and talk, etc.) and about their hours in order to
+accommodate student needs.</p>
 <h4 id="writing-partner">Writing Partner</h4>
 <p>Writing Partner: Chris Meng</p>
-<p>ID1 has an attached Writing and Speaking Partner, Chris Meng, to help students develop their communication skills. Chris is a junior psychology major &amp; math minor at Pomona. This is his first semester working at the Writing Center. You will meet with him throughout the semester to brainstorm ideas and revise drafts. As an attached Writing and Speaking Partner, Chris will know the expectations for each assignment and can make sure you are on track. He is a resource to help you hone your writing and speaking skills and feel comfortable with college-level writing, discussion, and presentation.</p>
-<p>While there are set times when you must meet with Chris (see the assignments for specific dates), you are encouraged to meet with him whenever you feel stuck, want to talk through an idea, or want feedback on your writing for the course.</p>
-<h2 id="claremont-colleges-library-research-support-services">Claremont Colleges Library Research Support Services</h2>
-<p>The Claremont Colleges Library provides a welcoming space for students to get help on their research assignments, from theses and dissertations, to papers, to multimedia projects. Librarians are available to work with students in any discipline at any stage of the research process, including narrowing down a topic, locating and using resources, or creating a formatted reference list. Even if you are an experienced researcher, you can still benefit from working with a librarian: your librarian can introduce you to ideas, perspectives, or resources you haven’t yet considered. You will find working with a librarian to be most valuable earlier in your research process than the night before your assignment is due - the earlier the better!</p>
-<p><a href="https://library.claremont.edu/ask-us/" target = "_blank">General research appointments</a> or <a href="https://library.claremont.edu/librarians/" target = "_blank">subject specific research appointments</a> are available for all students at point in your project. In addition, you can get support through the Student Assisted Research Support, available through <a href="https://library.claremont.edu/ask-us/" target = "_blank">chat</a>, Mondays-Fridays. Check the library’s website for up-to-date hours.</p>
-<p>One other library resources is their subject specific <a href = "https://libguides.libraries.claremont.edu/homepage" target = _blank">Research Guides</a>.</p>
+<p>ID1 has an attached Writing and Speaking Partner, Chris Meng, to help
+students develop their communication skills. Chris is a junior
+psychology major &amp; math minor at Pomona. This is his first semester
+working at the Writing Center. You will meet with him throughout the
+semester to brainstorm ideas and revise drafts. As an attached Writing
+and Speaking Partner, Chris will know the expectations for each
+assignment and can make sure you are on track. He is a resource to help
+you hone your writing and speaking skills and feel comfortable with
+college-level writing, discussion, and presentation.</p>
+<p>While there are set times when you must meet with Chris (see the
+assignments for specific dates), you are encouraged to meet with him
+whenever you feel stuck, want to talk through an idea, or want feedback
+on your writing for the course.</p>
+<h2 id="claremont-colleges-library-research-support-services">Claremont
+Colleges Library Research Support Services</h2>
+<p>The Claremont Colleges Library provides a welcoming space for
+students to get help on their research assignments, from theses and
+dissertations, to papers, to multimedia projects. Librarians are
+available to work with students in any discipline at any stage of the
+research process, including narrowing down a topic, locating and using
+resources, or creating a formatted reference list. Even if you are an
+experienced researcher, you can still benefit from working with a
+librarian: your librarian can introduce you to ideas, perspectives, or
+resources you haven’t yet considered. You will find working with a
+librarian to be most valuable earlier in your research process than the
+night before your assignment is due - the earlier the better!</p>
+<p><a href="https://library.claremont.edu/ask-us/" target = "_blank">General
+research appointments</a> or
+<a href="https://library.claremont.edu/librarians/" target = "_blank">subject
+specific research appointments</a> are available for all students at
+point in your project. In addition, you can get support through the
+Student Assisted Research Support, available through
+<a href="https://library.claremont.edu/ask-us/" target = "_blank">chat</a>,
+Mondays-Fridays. Check the library’s website for up-to-date hours.</p>
+<p>One other library resources is their subject specific
+<a href = "https://libguides.libraries.claremont.edu/homepage" target = _blank">Research
+Guides</a>.</p>
 <h2 id="academic-honesty.">Academic Honesty.</h2>
-<p>You are on your honor to present only your work as part of your course assessments. Below, I’ve provided Pomona’s academic honesty policy which is available in the Student Handbook. But before the policy, I’ve given some thoughts on cheating which I have taken from Nick Ball’s CHEM 147 Collective (thank you, Prof Ball!). Prof Ball gives us all something to think about when we are learning in a classroom as well as on our journey to become scientists and professionals:</p>
-<p>There are many known reasons why we may feel the need to “cheat” on problem sets or exams:</p>
+<p>You are on your honor to present only your work as part of your
+course assessments. Below, I’ve provided Pomona’s academic honesty
+policy which is available in the Student Handbook. But before the
+policy, I’ve given some thoughts on cheating which I have taken from
+Nick Ball’s CHEM 147 Collective (thank you, Prof Ball!). Prof Ball gives
+us all something to think about when we are learning in a classroom as
+well as on our journey to become scientists and professionals:</p>
+<p>There are many known reasons why we may feel the need to “cheat” on
+problem sets or exams:</p>
 <ul>
 <li>An academic environment that values grades above learning.</li>
-<li>Financial aid is critical for remaining in school that places undue pressure on maintaining a high GPA.</li>
-<li>Navigating school, work, and/or family obligations that have diverted focus from class.</li>
+<li>Financial aid is critical for remaining in school that places undue
+pressure on maintaining a high GPA.</li>
+<li>Navigating school, work, and/or family obligations that have
+diverted focus from class.</li>
 <li>Challenges balancing coursework and mental health.</li>
 <li>Balancing academic, family, peer, or personal issues.</li>
 </ul>
-<p>Being accused of cheating – whether it has occurred or not – can be devastating for students. The college requires me to respond to potential academic dishonesty with a process that is very long and damaging. As your instructor, I care about you and want to offer alternatives to prevent us from having to go through this process. If you find yourself in a situation where “cheating” seems like the only option:</p>
-<p><strong>Please come talk to me. We will figure this out together.</strong></p>
-<p>Pomona College is an academic community, all of whose members are expected to abide by ethical standards both in their conduct and in their exercise of responsibilities toward other members of the community. The college expects students to understand and adhere to basic standards of honesty and academic integrity. These standards include, but are not limited to, the following:</p>
-<p>Here are fun <a href = "https://library.claremont.edu/exploring-academic-integrity/" target = "_blank">academic honesty tutorials &amp; quizes</a> you could work through to test your knowledge.</p>
-<p>Please be sure to read <a href="http://catalog.pomona.edu/content.php?catoid=7&navoid=394" target = "_blank">Pomona’s Policies on Academic Integrity</a>. <a href = "Academic_Integrity.doc" target = "_blank">Additional information</a> on citation, summarizing, and working with others so that you can successfully maintain academic integrity.</p>
+<p>Being accused of cheating – whether it has occurred or not – can be
+devastating for students. The college requires me to respond to
+potential academic dishonesty with a process that is very long and
+damaging. As your instructor, I care about you and want to offer
+alternatives to prevent us from having to go through this process. If
+you find yourself in a situation where “cheating” seems like the only
+option:</p>
+<p><strong>Please come talk to me. We will figure this out
+together.</strong></p>
+<p>Pomona College is an academic community, all of whose members are
+expected to abide by ethical standards both in their conduct and in
+their exercise of responsibilities toward other members of the
+community. The college expects students to understand and adhere to
+basic standards of honesty and academic integrity. These standards
+include, but are not limited to, the following:</p>
+<p>Here are fun
+<a href = "https://library.claremont.edu/exploring-academic-integrity/" target = "_blank">academic
+honesty tutorials &amp; quizes</a> you could work through to test your
+knowledge.</p>
+<p>Please be sure to read
+<a href="http://catalog.pomona.edu/content.php?catoid=7&navoid=394" target = "_blank">Pomona’s
+Policies on Academic Integrity</a>.
+<a href = "Academic_Integrity.doc" target = "_blank">Additional
+information</a> on citation, summarizing, and working with others so
+that you can successfully maintain academic integrity.</p>
 <h2 id="covid-safety-awareness.">Covid Safety Awareness.</h2>
-<p>The faculty at Pomona College knows that person-to-person interaction provides the best liberal arts education. The best learning occurs in small communities. This year we are gathering in person for what we do best: create, generate, and share knowledge. During the past academic year, we built community remotely, and this year we will build on the pedagogical improvements we acquired last year. For example, we might meet on zoom from time to time, or hold discussions online on Sakai Discussions Board.</p>
-<p>Our health, both mental and physical, is paramount. We must consider the health of others inside and outside the classroom. All Claremont Colleges students have signed agreements regulating on-campus behavior during the pandemic; in the classroom, we will uphold these agreements. We need to take care of each other for this course to be successful. I ask you therefore to adhere to the following principles:</p>
+<p>The faculty at Pomona College knows that person-to-person interaction
+provides the best liberal arts education. The best learning occurs in
+small communities. This year we are gathering in person for what we do
+best: create, generate, and share knowledge. During the past academic
+year, we built community remotely, and this year we will build on the
+pedagogical improvements we acquired last year. For example, we might
+meet on zoom from time to time, or hold discussions online on Sakai
+Discussions Board.</p>
+<p>Our health, both mental and physical, is paramount. We must consider
+the health of others inside and outside the classroom. All Claremont
+Colleges students have signed agreements regulating on-campus behavior
+during the pandemic; in the classroom, we will uphold these agreements.
+We need to take care of each other for this course to be successful. I
+ask you therefore to adhere to the following principles:</p>
 <ul>
-<li><p>There is a mask mandate for all indoor spaces on campus. You must wear a mask for the entire class; eating and drinking are not permitted. Your mask must cover your mouth and nose. The college has zero-tolerance for violations of this policy, and our shared commitment to the health and safety of our community members means if you come to class unmasked you will have to leave class for the day.</p></li>
-<li><p>Class attendance is required, but if you need to miss class for health reasons, concerning symptoms, suspected Covid exposure, unexpected dependent care, technology issues, or other emergency reasons I will work with you. Let me underscore this: please make your decisions always based on health, safety, and wellness—yours and others—and I will work with you at the other end. Take any potential symptoms seriously; we’re counting on each other.</p></li>
-<li><p>When not in class, avoid closed public spaces, and if you can’t avoid them: wear your mask properly, wash your hands, and maintain social distance.</p></li>
-<li><p>If you, or a family member, are experiencing hardship because of the pandemic, talk to me or to someone in the Dean of Students office. You are not alone during this time.</p></li>
+<li><p>There is a mask mandate for all indoor spaces on campus. You must
+wear a mask for the entire class; eating and drinking are not permitted.
+Your mask must cover your mouth and nose. The college has zero-tolerance
+for violations of this policy, and our shared commitment to the health
+and safety of our community members means if you come to class unmasked
+you will have to leave class for the day.</p></li>
+<li><p>Class attendance is required, but if you need to miss class for
+health reasons, concerning symptoms, suspected Covid exposure,
+unexpected dependent care, technology issues, or other emergency reasons
+I will work with you. Let me underscore this: please make your decisions
+always based on health, safety, and wellness—yours and others—and I will
+work with you at the other end. Take any potential symptoms seriously;
+we’re counting on each other.</p></li>
+<li><p>When not in class, avoid closed public spaces, and if you can’t
+avoid them: wear your mask properly, wash your hands, and maintain
+social distance.</p></li>
+<li><p>If you, or a family member, are experiencing hardship because of
+the pandemic, talk to me or to someone in the Dean of Students office.
+You are not alone during this time.</p></li>
 </ul>
-<p>The pandemic is fast-moving, and we might have to adjust the principles as the semester evolves. I am always happy to receive your feedback to make this course work.</p>
-<p>Let’s care for each other, show empathy, and be supportive. While there will likely be some community transmission and breakthrough infections, together, we can minimize their effect on our community and on your learning.</p>
+<p>The pandemic is fast-moving, and we might have to adjust the
+principles as the semester evolves. I am always happy to receive your
+feedback to make this course work.</p>
+<p>Let’s care for each other, show empathy, and be supportive. While
+there will likely be some community transmission and breakthrough
+infections, together, we can minimize their effect on our community and
+on your learning.</p>
 <h2 id="grades.">Grades.</h2>
 <p>Your final grade will be calculated as follows.</p>
 <pre><code>        Formal papers              65%
@@ -2364,7 +2634,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
         Leading discussions        10%
 
         Class Participation        10%</code></pre>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2385,8 +2656,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>© Jo Hardin, 2021 -- jo.hardin@pomona.edu -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a></p>
-<p>Math 154 -- Computational Statistics -- Pomona College, Claremont, CA</p>
+<p>© Jo Hardin, 2021 -- jo.hardin@pomona.edu --
+<a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a></p>
+<p>Math 154 -- Computational Statistics -- Pomona College, Claremont,
+CA</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
